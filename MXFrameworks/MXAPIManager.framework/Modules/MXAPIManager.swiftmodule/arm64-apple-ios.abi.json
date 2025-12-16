@@ -806,7 +806,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC6sharedABvpZ",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(cpy)shared",
             "mangledName": "$s12MXAPIManagerAAC6sharedABvpZ",
             "moduleName": "MXAPIManager",
             "static": true,
@@ -814,7 +814,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -832,13 +833,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC6sharedABvgZ",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(cm)shared",
                 "mangledName": "$s12MXAPIManagerAAC6sharedABvgZ",
                 "moduleName": "MXAPIManager",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -865,13 +867,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC8delegateAA0A8Delegate_pSgvp",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(py)delegate",
             "mangledName": "$s12MXAPIManagerAAC8delegateAA0A8Delegate_pSgvp",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -896,10 +899,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC8delegateAA0A8Delegate_pSgvg",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)delegate",
                 "mangledName": "$s12MXAPIManagerAAC8delegateAA0A8Delegate_pSgvg",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -928,10 +934,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC8delegateAA0A8Delegate_pSgvs",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)setDelegate:",
                 "mangledName": "$s12MXAPIManagerAAC8delegateAA0A8Delegate_pSgvs",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -967,14 +976,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC4hostSSvp",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(py)host",
             "mangledName": "$s12MXAPIManagerAAC4hostSSvp",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -991,10 +1001,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC4hostSSvg",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)host",
                 "mangledName": "$s12MXAPIManagerAAC4hostSSvg",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -1015,10 +1028,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC4hostSSvs",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)setHost:",
                 "mangledName": "$s12MXAPIManagerAAC4hostSSvs",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -1054,14 +1070,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC5appIdSSvp",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(py)appId",
             "mangledName": "$s12MXAPIManagerAAC5appIdSSvp",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1078,10 +1095,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC5appIdSSvg",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)appId",
                 "mangledName": "$s12MXAPIManagerAAC5appIdSSvg",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -1102,10 +1122,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC5appIdSSvs",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)setAppId:",
                 "mangledName": "$s12MXAPIManagerAAC5appIdSSvs",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -1141,14 +1164,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC9appSecertSSvp",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(py)appSecert",
             "mangledName": "$s12MXAPIManagerAAC9appSecertSSvp",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1165,10 +1189,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC9appSecertSSvg",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)appSecert",
                 "mangledName": "$s12MXAPIManagerAAC9appSecertSSvg",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -1189,10 +1216,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC9appSecertSSvs",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)setAppSecert:",
                 "mangledName": "$s12MXAPIManagerAAC9appSecertSSvs",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -1228,13 +1258,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC5tokenSSvp",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(py)token",
             "mangledName": "$s12MXAPIManagerAAC5tokenSSvp",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1251,10 +1282,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC5tokenSSvg",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)token",
                 "mangledName": "$s12MXAPIManagerAAC5tokenSSvg",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -1275,10 +1309,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC5tokenSSvs",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)setToken:",
                 "mangledName": "$s12MXAPIManagerAAC5tokenSSvs",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -1314,7 +1351,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12MXAPIManagerAAC7versionSSvp",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(py)version",
             "mangledName": "$s12MXAPIManagerAAC7versionSSvp",
             "moduleName": "MXAPIManager",
             "declAttributes": [
@@ -1322,7 +1359,8 @@
               "Final",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1340,12 +1378,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12MXAPIManagerAAC7versionSSvg",
+                "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)version",
                 "mangledName": "$s12MXAPIManagerAAC7versionSSvg",
                 "moduleName": "MXAPIManager",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -1381,11 +1420,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MXAPIManagerAAC6config_5appId0C6SecertySS_S2StF",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)config:appId:appSecert:",
             "mangledName": "$s12MXAPIManagerAAC6config_5appId0C6SecertySS_S2StF",
             "moduleName": "MXAPIManager",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1407,11 +1447,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MXAPIManagerAAC17setRequestTimeout4withySd_tF",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)setRequestTimeoutWith:",
             "mangledName": "$s12MXAPIManagerAAC17setRequestTimeout4withySd_tF",
             "moduleName": "MXAPIManager",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1433,12 +1474,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MXAPIManagerAAC6update5tokenySS_tF",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)updateWithToken:",
             "mangledName": "$s12MXAPIManagerAAC6update5tokenySS_tF",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1460,12 +1502,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MXAPIManagerAAC6update8languageySS_tF",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)updateWithLanguage:",
             "mangledName": "$s12MXAPIManagerAAC6update8languageySS_tF",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1481,12 +1524,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MXAPIManagerAAC7showLogyyF",
+            "usr": "c:@M@MXAPIManager@objc(cs)MXAPIManager(im)showLog",
             "mangledName": "$s12MXAPIManagerAAC7showLogyyF",
             "moduleName": "MXAPIManager",
             "declAttributes": [
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2044,12 +2088,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MXAPIManagerAAC13cancleRequest4pathySS_tF",
+            "usr": "c:@CM@MXAPIManager@objc(cs)MXAPIManager(im)cancleRequestWithPath:",
             "mangledName": "$s12MXAPIManagerAAC13cancleRequest4pathySS_tF",
             "moduleName": "MXAPIManager",
             "declAttributes": [
+              "Dynamic",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2061,6 +2107,7 @@
         "moduleName": "MXAPIManager",
         "declAttributes": [
           "AccessControl",
+          "ObjCMembers",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -2141,65 +2188,72 @@
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 732,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
-      "offset": 770,
+      "offset": 783,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 836,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 867,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
-      "offset": 934,
+      "offset": 947,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
-      "offset": 978,
+      "offset": 991,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1070,
+      "offset": 1083,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1127,
+      "offset": 1140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1183,
+      "offset": 1196,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12974,
+      "length": 7,
+      "value": "\"%.0lf\""
     }
   ]
 }

@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -304,12 +305,30 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@protocol MXAPIManagerDelegate;
+@class NSString;
 SWIFT_CLASS("_TtC12MXAPIManager12MXAPIManager")
 @interface MXAPIManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MXAPIManager * _Nonnull shared;)
++ (MXAPIManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) id <MXAPIManagerDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSString * _Nonnull host;
+@property (nonatomic, copy) NSString * _Nonnull appId;
+@property (nonatomic, copy) NSString * _Nonnull appSecert;
+@property (nonatomic, copy) NSString * _Nonnull token;
+@property (nonatomic, readonly, copy) NSString * _Nonnull version;
+- (void)config:(NSString * _Nonnull)host appId:(NSString * _Nonnull)appId appSecert:(NSString * _Nonnull)appSecert;
+- (void)setRequestTimeoutWith:(NSTimeInterval)interval;
+- (void)updateWithToken:(NSString * _Nonnull)token;
+- (void)updateWithLanguage:(NSString * _Nonnull)language;
+- (void)showLog;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
+@interface MXAPIManager (SWIFT_EXTENSION(MXAPIManager))
+- (void)cancleRequestWithPath:(NSString * _Nonnull)path;
+@end
+
 SWIFT_PROTOCOL("_TtP12MXAPIManager20MXAPIManagerDelegate_")
 @protocol MXAPIManagerDelegate
 @optional
