@@ -1,0 +1,23 @@
+/* 
+  InfoPlist.strings
+  MXApp
+
+  Created by 华峰 on 2022/6/19.
+  
+*/
+
+CFBundleDisplayName = "智家精灵";
+NSBluetoothAlwaysUsageDescription = "该权限将用于通过蓝牙添加、查看和控制设备，设置设备Wi-Fi和进行固件升级";
+NSBluetoothPeripheralUsageDescription = "该权限将被用于蓝牙设备连接、控制等功能";
+NSCameraUsageDescription = "该权限将被用于扫码、设置头像等功能";
+NSLocationWhenInUseUsageDescription = "该权限将被用于登录、注册时的快速定位，以及快速获取当地的天气、日出日落、Wi-Fi名称等信息";
+NSLocationAlwaysUsageDescription = "该权限将被用于登录、注册时的快速定位，以及快速获取当地的天气、日出日落、Wi-Fi名称等信息";
+NSLocationAlwaysAndWhenInUseUsageDescription = "该权限将被用于登录、注册时的快速定位，以及快速获取当地的天气、日出日落、Wi-Fi名称等信息";
+NSMicrophoneUsageDescription = "该权限将被用于语音控制智能设备等功能";
+NSPhotoLibraryAddUsageDescription = "该权限将被用于储存设备信息";
+NSPhotoLibraryUsageDescription = "该权限将被用于设置头像";
+NSContactsUsageDescription = "该权限用于一键登录等功能";
+NSLocationUsageDescription = "该权限将被用于登录、注册时的快速定位，以及快速获取当地的天气、日出日落、Wi-Fi名称等信息";
+NSLocationTemporaryUsageDescriptionDictionary = {
+    WantsToGetWiFiSSID = "app需要使用您的精准位置获取Wi-Fi的信息";
+};

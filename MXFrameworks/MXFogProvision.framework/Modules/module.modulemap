@@ -1,0 +1,11 @@
+framework module MXFogProvision {
+  umbrella header "MXFogProvision.h"
+  export *
+
+  module * { export * }
+}
+
+module MXFogProvision.Swift {
+  header "MXFogProvision-Swift.h"
+  requires objc
+}

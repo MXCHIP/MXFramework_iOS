@@ -1,0 +1,15 @@
+//
+//  Config-release.xcconfig
+//  MXApp
+//
+//  Created by 华峰 on 2021/12/10.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-MXApp/Pods-MXApp.release.xcconfig"
+
+MXHostType = 3
+
+MXAPPICON_NAME = AppIcon

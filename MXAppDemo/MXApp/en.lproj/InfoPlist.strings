@@ -1,0 +1,23 @@
+/* 
+  InfoPlist.strings
+  MXApp
+
+  Created by 华峰 on 2022/6/19.
+  
+*/
+
+CFBundleDisplayName = "Smart Plus";
+NSBluetoothAlwaysUsageDescription = "We need your authorization to add, view and control the device, set up the device Wi-Fi and upgrade firmware via Bluetooth.";
+NSBluetoothPeripheralUsageDescription = "We need your authorization for Bluetooth device connection and control.";
+NSCameraUsageDescription = "We need your authorization to scan QR code and set a profile photo";
+NSLocationWhenInUseUsageDescription = "We need your authorization to identify your locations for login and registration and to obtain your local information, including temperature, humidity, and sunrise/sunset, Wi-Fi names.";
+NSLocationAlwaysUsageDescription = "We need your authorization to identify your locations for login and registration and to obtain your local information, including temperature,humidity,sunrise/sunset times, and Wi-Fi names.";
+NSLocationAlwaysAndWhenInUseUsageDescription = "We need your authorization to identify your locations for login and registration and to obtain your local information, including temperature,humidity,sunrise/sunset times, and Wi-Fi names.";
+NSMicrophoneUsageDescription = "We need your authorization to control the smart device by voice.";
+NSPhotoLibraryAddUsageDescription = "We need your authorization to keep device information.";
+NSPhotoLibraryUsageDescription = "We need your authorization to set a profile photo.";
+NSContactsUsageDescription = "We need your authorization to one click login";
+NSLocationUsageDescription = "We need your authorization to identify your locations for login and registration and to obtain your local information, including temperature, humidity, and sunrise/sunset, Wi-Fi names.";
+NSLocationTemporaryUsageDescriptionDictionary = {
+    WantsToGetWiFiSSID = "We need your exact location to get Wi-Fi information";
+};

@@ -1,0 +1,6 @@
+framework module dsBridge {
+  umbrella header "dsBridge.h"
+  export *
+
+  module * { export * }
+}
