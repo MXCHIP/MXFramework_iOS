@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeshSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MeshSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreBluetooth
 import CryptoSwift
 import Foundation
@@ -1473,10 +1473,10 @@ public struct ConfigNetKeyAdd : MeshSDK.AcknowledgedConfigMessage, MeshSDK.Confi
   @objc optional func receiveMeshMessage(uuid: Swift.String, elementIndex: Swift.Int, message: Swift.String)
 }
 @objc public protocol MXMeshProvisioningDelegate {
-  @objc optional func inputExchangeInformation(uuid: Swift.String?, confirmationKey: Swift.String, handler: @escaping (_ uuid: Swift.String?, _ provisionerRandom: Swift.String?, _ provisionerConfirmation: Swift.String?, _ authValueKey: Swift.String?) -> Swift.Void)
-  @objc optional func checkStaticOOBDeviceInfo(uuid: Swift.String?, provisionerRandom: Swift.String, deviceConfirmation: Swift.String, deviceRandom: Swift.String, handler: @escaping (_ uuid: Swift.String?, _ isSuccess: Swift.Bool) -> Swift.Void)
-  @objc optional func inputPublicKey(uuid: Swift.String?, handler: @escaping (Swift.String) -> Swift.Void)
-  @objc optional func inputUnicastAddress(uuid: Swift.String?, elementNum: Swift.Int, handler: @escaping (_ uuid: Swift.String?, _ address: Swift.Int) -> Swift.Void)
+  @objc optional func inputExchangeInformation(uuid: Swift.String?, confirmationKey: Swift.String, handler: @escaping ((_ uuid: Swift.String?, _ provisionerRandom: Swift.String?, _ provisionerConfirmation: Swift.String?, _ authValueKey: Swift.String?) -> Swift.Void))
+  @objc optional func checkStaticOOBDeviceInfo(uuid: Swift.String?, provisionerRandom: Swift.String, deviceConfirmation: Swift.String, deviceRandom: Swift.String, handler: @escaping ((_ uuid: Swift.String?, _ isSuccess: Swift.Bool) -> Swift.Void))
+  @objc optional func inputPublicKey(uuid: Swift.String?, handler: @escaping ((Swift.String) -> Swift.Void))
+  @objc optional func inputUnicastAddress(uuid: Swift.String?, elementNum: Swift.Int, handler: @escaping ((_ uuid: Swift.String?, _ address: Swift.Int) -> Swift.Void))
   @objc optional func meshProvisionProcess(uuid: Swift.String?, step: Swift.Int)
   @objc optional func meshProvisionFinish(uuid: Swift.String?, error: Foundation.NSError?)
 }
@@ -4133,9 +4133,15 @@ extension MeshSDK.TransitionTime {
     get
   }
 }
+#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional where Wrapped == MeshSDK.TransitionTime {
   public func or(_ defaultTransitionTime: MeshSDK.TransitionTime?) -> MeshSDK.TransitionTime
 }
+#else
+extension Swift.Optional where Wrapped == MeshSDK.TransitionTime {
+  public func or(_ defaultTransitionTime: MeshSDK.TransitionTime?) -> MeshSDK.TransitionTime
+}
+#endif
 extension MeshSDK.TransitionTime : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get

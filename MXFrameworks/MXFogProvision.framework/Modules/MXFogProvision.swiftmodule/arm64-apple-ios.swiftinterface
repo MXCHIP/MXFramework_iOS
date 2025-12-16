@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MXFogProvision
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MXFogProvision
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import CoreBluetooth
@@ -29,10 +29,10 @@ extension MXFogProvision.MXFogBleScan : CoreBluetooth.CBCentralManagerDelegate {
 }
 @objc public protocol MXFogProvisionDelegate {
   @objc optional func mxFogProvisionFinish(productKey: Swift.String?, deviceName: Swift.String?, error: Foundation.NSError?)
-  @objc optional func mxFogProvisionRequestConnectStatus(productKey: Swift.String?, deviceName: Swift.String?, random: Swift.String?, handler: @escaping (_ connectStatus: Swift.Bool) -> Swift.Void)
-  @objc optional func mxFogProvisionRequestRandom(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping (_ randomStr: Swift.String?) -> Swift.Void)
-  @objc optional func mxFogProvisionRequestBleKey(productKey: Swift.String?, deviceName: Swift.String?, random: Swift.String?, cipher: Swift.String?, handler: @escaping (_ cipher: Swift.String?) -> Swift.Void)
-  @objc optional func mxFogProvisionInputWifiInfo(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping (_ ssid: Swift.String, _ password: Swift.String?, _ customParams: [Swift.String : Any]?) -> Swift.Void)
+  @objc optional func mxFogProvisionRequestConnectStatus(productKey: Swift.String?, deviceName: Swift.String?, random: Swift.String?, handler: @escaping ((_ connectStatus: Swift.Bool) -> Swift.Void))
+  @objc optional func mxFogProvisionRequestRandom(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping ((_ randomStr: Swift.String?) -> Swift.Void))
+  @objc optional func mxFogProvisionRequestBleKey(productKey: Swift.String?, deviceName: Swift.String?, random: Swift.String?, cipher: Swift.String?, handler: @escaping ((_ cipher: Swift.String?) -> Swift.Void))
+  @objc optional func mxFogProvisionInputWifiInfo(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping ((_ ssid: Swift.String, _ password: Swift.String?, _ customParams: [Swift.String : Any]?) -> Swift.Void))
 }
 public enum MXFogBleProvisionResultCode : Swift.Int {
   case ResultCode_Success
@@ -54,7 +54,7 @@ public enum MXFogBleProvisionResultCode : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers public class MXFogBluetoothProtocolHandler : ObjectiveC.NSObject {
   public func mxFog_segment(_ data: Foundation.Data, toMtu mtu: Swift.Int) -> [Foundation.Data]
-  public func mxFog_reassemble(_ data: Foundation.Data) -> Foundation.Data?
+  public func mxFog_reassemble(_ data: Foundation.Data) -> (Foundation.Data)?
   @objc override dynamic public init()
   @objc deinit
 }
