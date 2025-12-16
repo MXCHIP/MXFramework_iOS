@@ -5268,420 +5268,420 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
       "kind": "IntegerLiteral",
       "offset": 579,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
       "kind": "BooleanLiteral",
       "offset": 610,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleScan.swift",
       "kind": "IntegerLiteral",
       "offset": 1000,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 220,
       "length": 5,
       "value": "10002"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 277,
       "length": 5,
       "value": "10003"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 5,
       "value": "20000"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 384,
       "length": 5,
       "value": "20001"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 446,
       "length": 5,
       "value": "20002"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 509,
       "length": 5,
       "value": "20003"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 583,
       "length": 5,
       "value": "20004"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 660,
       "length": 5,
       "value": "20005"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 726,
       "length": 5,
       "value": "20006"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 796,
       "length": 5,
       "value": "20007"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 885,
       "length": 4,
       "value": "0b00"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 917,
       "length": 4,
       "value": "0b01"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 949,
       "length": 4,
       "value": "0b10"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 981,
       "length": 4,
       "value": "0b11"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 1307,
       "length": 4,
       "value": "0x02"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLinkProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLinkProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 699,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLinkProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLinkProvision.swift",
       "kind": "BooleanLiteral",
       "offset": 858,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLinkProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLinkProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 1355,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "StringLiteral",
       "offset": 304,
       "length": 16,
       "value": "\"com.mxBle.lock\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "Array",
       "offset": 354,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "StringLiteral",
       "offset": 575,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 783,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 812,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 966,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
       "offset": 1141,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
       "offset": 1690,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
       "offset": 6153,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "IntegerLiteral",
       "offset": 306,
       "length": 5,
       "value": "63123"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "IntegerLiteral",
       "offset": 412,
       "length": 5,
       "value": "63126"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "IntegerLiteral",
       "offset": 473,
       "length": 5,
       "value": "50000"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "FloatLiteral",
       "offset": 561,
       "length": 4,
       "value": "0.02"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "IntegerLiteral",
       "offset": 629,
       "length": 5,
       "value": "0x4E0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "IntegerLiteral",
       "offset": 704,
       "length": 4,
       "value": "0xEE"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 774,
       "length": 4,
       "value": "\"MD\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 800,
       "length": 5,
       "value": "\"MAC\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 933,
       "length": 6,
       "value": "\"SSID\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1008,
       "length": 10,
       "value": "\"PASSWORD\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1075,
       "length": 6,
       "value": "\"DHCP\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1142,
       "length": 4,
       "value": "\"IP\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1232,
       "length": 9,
       "value": "\"NETMASK\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1318,
       "length": 9,
       "value": "\"GATEWAY\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1401,
       "length": 6,
       "value": "\"DNS1\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 1486,
       "length": 6,
       "value": "\"DNS2\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "BooleanLiteral",
       "offset": 2392,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "BooleanLiteral",
       "offset": 2586,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "Array",
       "offset": 2667,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "IntegerLiteral",
       "offset": 2744,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "Array",
       "offset": 3124,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "Array",
       "offset": 3218,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "Dictionary",
       "offset": 3291,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 3367,
       "length": 19,
       "value": "\"com.easylink.lock\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 3463,
       "length": 19,
       "value": "\"com.easylink.send\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",
       "kind": "StringLiteral",
       "offset": 3535,
       "length": 21,

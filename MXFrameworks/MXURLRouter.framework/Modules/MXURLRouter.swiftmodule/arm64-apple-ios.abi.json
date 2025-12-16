@@ -569,21 +569,21 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouterService.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouterService.swift",
       "kind": "Dictionary",
       "offset": 726,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
       "kind": "BooleanLiteral",
       "offset": 414,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
       "kind": "BooleanLiteral",
       "offset": 481,
       "length": 5,
