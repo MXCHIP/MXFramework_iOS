@@ -1,0 +1,150 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MXFogProvision
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import SystemConfiguration.CaptiveNetwork
+import CommonCrypto
+import CoreBluetooth
+import CryptoKit
+import Foundation
+@_exported import MXFogProvision
+import Network
+import Swift
+import SystemConfiguration
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class MXFogBleScan : ObjectiveC.NSObject {
+  @objc public static let shared: MXFogBleScan
+  public typealias MXScanResultCallback = (_ devices: [[Swift.String : Any]], _ isStop: Swift.Bool) -> ()
+  @objc public var scanDevices: [[Swift.String : Any]]
+  @objc override dynamic public init()
+  @objc public func startScan(timeout: Swift.Int = 0, callback: @escaping MXFogBleScan.MXScanResultCallback)
+  @objc public func stopScan()
+  @objc deinit
+}
+extension MXFogBleScan : CoreBluetooth.CBCentralManagerDelegate {
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+}
+@objc public protocol MXFogProvisionDelegate {
+  @objc optional func mxFogProvisionFinish(productKey: Swift.String?, deviceName: Swift.String?, error: Foundation.NSError?)
+  @objc optional func mxFogProvisionRequestConnectStatus(productKey: Swift.String?, deviceName: Swift.String?, random: Swift.String?, handler: @escaping (_ connectStatus: Swift.Bool) -> Swift.Void)
+  @objc optional func mxFogProvisionRequestRandom(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping (_ randomStr: Swift.String?) -> Swift.Void)
+  @objc optional func mxFogProvisionRequestBleKey(productKey: Swift.String?, deviceName: Swift.String?, random: Swift.String?, cipher: Swift.String?, handler: @escaping (_ cipher: Swift.String?) -> Swift.Void)
+  @objc optional func mxFogProvisionInputWifiInfo(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping (_ ssid: Swift.String, _ password: Swift.String?, _ customParams: [Swift.String : Any]?) -> Swift.Void)
+}
+public enum MXFogBleProvisionResultCode : Swift.Int {
+  case ResultCode_Success
+  case ResultCode_Timeout
+  case ResultCode_BluetoothNotOpen
+  case ResultCode_Fail
+  case ResultCode_NotFoundDevice
+  case ResultCode_ConnectFail
+  case ResultCode_NotFoundService
+  case ResultCode_NotFoundCharacteristics
+  case ResultCode_NotifyCharacteristicsFail
+  case ResultCode_ConnectWifiFail
+  case ResultCode_ConnectCloudFail
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class MXFogBluetoothProtocolHandler : ObjectiveC.NSObject {
+  public func mxFog_segment(_ data: Foundation.Data, toMtu mtu: Swift.Int) -> [Foundation.Data]
+  public func mxFog_reassemble(_ data: Foundation.Data) -> Foundation.Data?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class MXEasyLinkProvision : ObjectiveC.NSObject, EasyLinkDelegate {
+  @objc public static var shared: MXEasyLinkProvision
+  @objc weak public var provisionDelegate: (any MXFogProvisionDelegate)?
+  @objc public func startProvision(pk: Swift.String? = nil, ssid: Swift.String, password: Swift.String? = nil, custom: [Swift.String : Any]? = nil, timeout: Swift.Double = 30, delegate: (any MXFogProvisionDelegate)? = nil)
+  @objc public func stopProvision()
+  @objc public func cleanProvisionCache()
+  @objc public func createRandom() -> Swift.String?
+  @objc public func onFound(metadata: [Swift.String : Any], host: Swift.String)
+  @objc public func onDisconnectFromFTC(client: Swift.Int, error: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public func aesCBCEncrypt(data: Foundation.Data, key: Foundation.Data, iv: Foundation.Data) -> Foundation.Data?
+public func mxAESCBCEncryptWithCommonCrypto(data: Foundation.Data, key: Foundation.Data, iv: Foundation.Data) -> Foundation.Data?
+public func aesCBCDecrypt(encryptedData: Foundation.Data, key: Foundation.Data, iv: Foundation.Data) -> Foundation.Data?
+public func mxAESCBCDecryptWithCommonCrypto(data: Foundation.Data, key: Foundation.Data, iv: Foundation.Data) -> Foundation.Data?
+public func pbkdf2Encrypt(hash: CommonCrypto.CCPBKDFAlgorithm, password: Swift.String, salt: Foundation.Data, keyByteCount: Swift.Int, rounds: Swift.Int) -> Foundation.Data?
+public func mxSHA256Encrypt(str: Swift.String) -> Swift.String
+public func mxFogDataToHex(data: Foundation.Data) -> Swift.String
+public func mxFogHexToData(hex: Swift.String) -> Foundation.Data
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MXFogBleProvision : ObjectiveC.NSObject {
+  @objc public static var shared: MXFogBleProvision
+  @objc weak public var provisionDelegate: (any MXFogProvisionDelegate)?
+  @objc deinit
+  @objc public func setTimeOut(timeNum: Swift.Int)
+  @objc public func setConnectTimeOut(timeNum: Swift.Int)
+}
+extension MXFogBleProvision {
+  @objc dynamic public func provisionDevice(peripheral: CoreBluetooth.CBPeripheral? = nil, productKey: Swift.String, deviceName: Swift.String, timeout: Swift.Int = 30, delegate: (any MXFogProvisionDelegate)?)
+  @objc dynamic public func cleanProvisionCache()
+  @objc dynamic public func startTimer()
+  @objc dynamic public func stopTimer()
+  @objc dynamic public func createRandom() -> Swift.String?
+  @objc dynamic public func createBleKey(secret: Swift.String) -> Swift.String?
+}
+extension MXFogBleProvision : CoreBluetooth.CBCentralManagerDelegate, CoreBluetooth.CBPeripheralDelegate {
+  @objc dynamic public func startScan()
+  @objc dynamic public func stopScan()
+  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didFailToConnect peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didModifyServices invalidatedServices: [CoreBluetooth.CBService])
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateNotificationStateFor characteristic: CoreBluetooth.CBCharacteristic, error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateValueFor characteristic: CoreBluetooth.CBCharacteristic, error: (any Swift.Error)?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didWriteValueFor characteristic: CoreBluetooth.CBCharacteristic, error: (any Swift.Error)?)
+  @objc dynamic public func peripheralIsReady(toSendWriteWithoutResponse peripheral: CoreBluetooth.CBPeripheral)
+}
+public let AWS_ECHO_SERVER_PORT: Swift.UInt16
+public let AWS_ECHO_CLIENT_PORT: Swift.UInt16
+public struct EasyLinkConfigKeys {
+  public static let SSID: Swift.String
+  public static let PASSWORD: Swift.String
+  public static let DHCP: Swift.String
+  public static let IP: Swift.String
+  public static let NETMASK: Swift.String
+  public static let GATEWAY: Swift.String
+  public static let DNS1: Swift.String
+  public static let DNS2: Swift.String
+}
+public protocol EasyLinkDelegate : AnyObject {
+  func onFound(metadata: [Swift.String : Any], host: Swift.String)
+  func onDisconnectFromFTC(client: Swift.Int, error: Swift.Bool)
+}
+public class EasyLink {
+  weak public var delegate: (any EasyLinkDelegate)?
+  public var enableDebug: Swift.Bool
+  public var awsDelayPerByte: Swift.Float
+  public init(delegate: (any EasyLinkDelegate)? = nil)
+  public init(enableDebug: Swift.Bool, delegate: (any EasyLinkDelegate)? = nil)
+  public func prepareEasyLink(wlanConfig: [Swift.String : Any])
+  public func transmitSettings()
+  public func stopTransmitting()
+  public func unInit()
+  public func sendUDPData(data: Foundation.Data, to host: Swift.String, port: Swift.UInt16 = AWS_ECHO_CLIENT_PORT)
+  @objc deinit
+}
+extension EasyLink {
+  public static func ssidForConnectedNetwork() -> Swift.String
+  public static func ssidDataForConnectedNetwork() -> Foundation.Data
+  public static func getIPAddress() -> Swift.String
+  public static func getBroadcastAddress() -> Swift.String
+  public static func hexStringToData(_ hexString: Swift.String) -> Foundation.Data?
+  public static func dataToHex(_ data: Foundation.Data) -> Swift.String
+}
+extension MXFogBleProvisionResultCode : Swift.Equatable {}
+extension MXFogBleProvisionResultCode : Swift.Hashable {}
+extension MXFogBleProvisionResultCode : Swift.RawRepresentable {}

@@ -173,7 +173,6 @@
 		7C7DABDF26CCE630004500BC /* MXPasswordInputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXPasswordInputPage.swift; sourceTree = "<group>"; };
 		7CF08EAD267AF4810030C385 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		7CF08EB0267B40BC0030C385 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
-		7CF08FE4268420B40030C385 /* MXApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MXApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		7CFA66A026FC286400972F7B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		7CFA66C227004E9400972F7B /* MXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXAPI.swift; sourceTree = "<group>"; };
 		7CFD25FA26B7EAE900C39170 /* mx-iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mx-iconfont.ttf"; sourceTree = "<group>"; };
@@ -425,7 +424,6 @@
 				DC7A8F38285F138000599C46 /* InfoPlist.strings */,
 				DC4427F426525F6800DEB40A /* Assets.xcassets */,
 				DCE5E6662D75783C006B0A64 /* Launch Screen.storyboard */,
-				7CF08FE4268420B40030C385 /* MXApp-Bridging-Header.h */,
 				DC4427FC26525F6800DEB40A /* Info.plist */,
 			);
 			path = MXApp;
@@ -1271,7 +1269,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MXApp/MXApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1319,7 +1316,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MXApp/MXApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

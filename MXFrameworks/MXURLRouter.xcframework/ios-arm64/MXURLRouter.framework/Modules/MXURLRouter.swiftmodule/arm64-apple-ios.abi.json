@@ -1,0 +1,593 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MXURLRouter",
+    "printedName": "MXURLRouter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MXURLRouter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MXURLRouter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXURLRouterDelegate",
+        "printedName": "MXURLRouterDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "controller",
+            "printedName": "controller(withParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MXURLRouter@objc(pl)MXURLRouterDelegate(cm)controllerWithParams:",
+            "mangledName": "$s11MXURLRouter0A8DelegateP10controller10withParamsyXlSDySSypG_tFZ",
+            "moduleName": "MXURLRouter",
+            "genericSig": "<τ_0_0 where τ_0_0 : MXURLRouter.MXURLRouterDelegate>",
+            "sugared_genericSig": "<Self where Self : MXURLRouter.MXURLRouterDelegate>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MXURLRouter@objc(pl)MXURLRouterDelegate",
+        "mangledName": "$s11MXURLRouter0A8DelegateP",
+        "moduleName": "MXURLRouter",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXURLRouterService",
+        "printedName": "MXURLRouterService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(key:module:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any AnyObject.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A7ServiceC8register3key6moduleySS_yXlXptFZ",
+            "mangledName": "$s11MXURLRouter0A7ServiceC8register3key6moduleySS_yXlXptFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "canOpen",
+            "printedName": "canOpen(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A7ServiceC7canOpen3urlSbSS_tFZ",
+            "mangledName": "$s11MXURLRouter0A7ServiceC7canOpen3urlSbSS_tFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHandleOverBlock",
+            "printedName": "setHandleOverBlock(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Bool?, [Swift.String : Any]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Bool?, [Swift.String : Any]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A7ServiceC18setHandleOverBlock5blockyySSSg_SbSgSDySSypGSgtc_tFZ",
+            "mangledName": "$s11MXURLRouter0A7ServiceC18setHandleOverBlock5blockyySSSg_SbSgSDySSypGSgtc_tFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11MXURLRouter0A7ServiceC",
+        "mangledName": "$s11MXURLRouter0A7ServiceC",
+        "moduleName": "MXURLRouter",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MXURLRouter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MXURLRouter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXURLRouter",
+        "printedName": "MXURLRouter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(url:modal:params:isCreateNav:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouterAAC4open3url5modal6params11isCreateNavySS_SbSDySSypGSgSbtFZ",
+            "mangledName": "$s11MXURLRouterAAC4open3url5modal6params11isCreateNavySS_SbSDySSypGSgSbtFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11MXURLRouterAAC",
+        "mangledName": "$s11MXURLRouterAAC",
+        "moduleName": "MXURLRouter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXURLRouterUtil",
+        "printedName": "MXURLRouterUtil",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "currentTopViewController",
+            "printedName": "currentTopViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A4UtilC24currentTopViewControllerSo06UIViewF0CyFZ",
+            "mangledName": "$s11MXURLRouter0A4UtilC24currentTopViewControllerSo06UIViewF0CyFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "currentTopViewController",
+            "printedName": "currentTopViewController(rootViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A4UtilC24currentTopViewController04rooteF0So06UIViewF0CAG_tFZ",
+            "mangledName": "$s11MXURLRouter0A4UtilC24currentTopViewController04rooteF0So06UIViewF0CAG_tFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "URLEncode",
+            "printedName": "URLEncode(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A4UtilC9URLEncode6stringS2S_tFZ",
+            "mangledName": "$s11MXURLRouter0A4UtilC9URLEncode6stringS2S_tFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "URLDecode",
+            "printedName": "URLDecode(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MXURLRouter0A4UtilC9URLDecode6stringS2S_tFZ",
+            "mangledName": "$s11MXURLRouter0A4UtilC9URLDecode6stringS2S_tFZ",
+            "moduleName": "MXURLRouter",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11MXURLRouter0A4UtilC",
+        "mangledName": "$s11MXURLRouter0A4UtilC",
+        "moduleName": "MXURLRouter",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouterService.swift",
+      "kind": "Dictionary",
+      "offset": 726,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 414,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXURLRouter\/MXURLRouter\/MXURLRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 481,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

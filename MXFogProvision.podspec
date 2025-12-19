@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.vendored_frameworks = 'MXFrameworks/MXFogProvision.framework'
-  s.static_framework = true
+  s.vendored_frameworks = 'MXFrameworks/MXFogProvision.xcframework'
+  s.static_framework = false
   
   
 end

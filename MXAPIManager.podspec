@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   s.author       = { "huafeng" => "zhanghf@mxchip.com" }
   s.source       = { :git => "https://github.com/MXCHIP/MXFrameworks_IOS.git" }
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
 
-  s.vendored_frameworks = 'MXFrameworks/MXAPIManager.framework'
-  s.static_framework = true
+  s.vendored_frameworks = 'MXFrameworks/MXAPIManager.xcframework'
+  s.static_framework = false
   
   s.dependency 'Alamofire'
    
