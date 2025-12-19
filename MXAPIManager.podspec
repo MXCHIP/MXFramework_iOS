@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   s.vendored_frameworks = 'MXFrameworks/MXAPIManager.xcframework'
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   s.static_framework = false
   
   s.dependency 'Alamofire'
