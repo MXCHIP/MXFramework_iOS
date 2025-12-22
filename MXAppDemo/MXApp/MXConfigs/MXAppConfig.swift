@@ -31,12 +31,12 @@ public class MXAppConfig: NSObject {
     public static let mxScreenHeight = UIScreen.main.bounds.size.height
     public static let mxAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
     
-    public static var MXHost = "https://app.api.cloud.mxchip.com:2443/"
+    public static var MXHost = "https://sit-app-api-cloud.dev.mxchip.com.cn/"
     public static var MXAppId = ""
     public static var MXAppSecert = ""
     public static var mxAppType = 0
-    public static var MXIotHTTPHost = "app.api.fogcloud.io"
-    public static var MXIotMQTTHost = "app.mqtt.fogcloud.io"
+    public static var MXIotHTTPHost = "api-demo.fogcloud.io"
+    public static var MXIotMQTTHost = "mqtt-demo.fogcloud.io"
 
     public static func mxLocalized(key: String) -> String {
         let currentLang = MXAccountModel.shared.language
