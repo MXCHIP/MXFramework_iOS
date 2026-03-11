@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MeshSDK"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "A short description of MeshSDK."
 
   s.description  = "mxchip mesh sdk"
@@ -15,7 +15,5 @@ Pod::Spec.new do |s|
   s.static_framework = false
   s.vendored_frameworks = 'MXFrameworks/MeshSDK.xcframework'
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
-  
-  s.dependency 'CryptoSwift'
 
 end

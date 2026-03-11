@@ -32,8 +32,8 @@ public class MXAppConfig: NSObject {
     public static let mxAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
     
     public static var MXHost = "https://sit-app-api-cloud.dev.mxchip.com.cn/"
-    public static var MXAppId = ""
-    public static var MXAppSecert = ""
+    public static var MXAppId = "f600273b423a41fe9fb3f49e83747c32"
+    public static var MXAppSecert = "3d9381eaec37453d8530856da112bb38"
     public static var mxAppType = 0
     public static var MXIotHTTPHost = "api-demo.fogcloud.io"
     public static var MXIotMQTTHost = "mqtt-demo.fogcloud.io"
