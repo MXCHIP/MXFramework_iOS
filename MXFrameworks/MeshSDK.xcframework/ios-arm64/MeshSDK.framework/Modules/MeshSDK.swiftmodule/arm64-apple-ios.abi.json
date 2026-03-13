@@ -111023,18 +111023,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
+                "name": "Double",
+                "printedName": "Swift.Double",
                 "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "usr": "s:Sd"
               },
               {
                 "kind": "TypeNominal",
@@ -111107,12 +111099,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7MeshSDKAAC04sendA7Message6opCode4uuid12elementIndex3tid7message9repeatNum7timeout10networkKey7isQueue0Q5Retry8callbackySS_SSSiSSSgypSiSdSgAOS2bySDySSypGcSgtF",
-            "mangledName": "$s7MeshSDKAAC04sendA7Message6opCode4uuid12elementIndex3tid7message9repeatNum7timeout10networkKey7isQueue0Q5Retry8callbackySS_SSSiSSSgypSiSdSgAOS2bySDySSypGcSgtF",
+            "usr": "c:@CM@MeshSDK@objc(cs)MeshSDK(im)sendMeshMessageWithOpCode:uuid:elementIndex:tid:message:repeatNum:timeout:networkKey:isQueue:isRetry:callback:",
+            "mangledName": "$s7MeshSDKAAC04sendA7Message6opCode4uuid12elementIndex3tid7message9repeatNum7timeout10networkKey7isQueue0Q5Retry8callbackySS_SSSiSSSgypSiSdAOS2bySDySSypGcSgtF",
             "moduleName": "MeshSDK",
             "declAttributes": [
+              "Dynamic",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -227696,29 +227690,36 @@
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MeshSDK\/MeshSDK\/MeshSDK+Message.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2530,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MeshSDK\/MeshSDK\/MeshSDK+Message.swift",
       "kind": "BooleanLiteral",
-      "offset": 2642,
+      "offset": 2639,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MeshSDK\/MeshSDK\/MeshSDK+Message.swift",
       "kind": "BooleanLiteral",
-      "offset": 2695,
+      "offset": 2692,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MeshSDK\/MeshSDK\/MeshSDK+Message.swift",
       "kind": "IntegerLiteral",
-      "offset": 11611,
+      "offset": 11621,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MeshSDK\/MeshSDK\/MeshSDK+Message.swift",
       "kind": "BooleanLiteral",
-      "offset": 11658,
+      "offset": 11668,
       "length": 4,
       "value": "true"
     },

@@ -477,6 +477,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 @end
 
 @interface MeshSDK (SWIFT_EXTENSION(MeshSDK))
+- (void)sendMeshMessageWithOpCode:(NSString * _Nonnull)opCode uuid:(NSString * _Nonnull)uuid elementIndex:(NSInteger)elementIndex tid:(NSString * _Nullable)tid message:(id _Nonnull)message repeatNum:(NSInteger)repeatNum timeout:(NSTimeInterval)timeout networkKey:(NSString * _Nullable)networkKey isQueue:(BOOL)isQueue isRetry:(BOOL)isRetry callback:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nonnull))callback;
 - (void)sendMessageWithAddress:(NSString * _Nonnull)address opCode:(NSString * _Nonnull)opCode tid:(NSString * _Nullable)tid message:(id _Nonnull)message networkKey:(NSString * _Nonnull)networkKey repeatNum:(NSInteger)repeatNum isQueue:(BOOL)isQueue;
 @end
 

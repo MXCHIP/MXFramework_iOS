@@ -6391,7 +6391,7 @@ public enum MeshMessageSendStatusCode : Swift.Int {
 }
 extension MeshSDK : MeshNetworkDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
-  public func sendMeshMessage(opCode: Swift.String, uuid: Swift.String, elementIndex: Swift.Int = 0, tid: Swift.String? = nil, message: Any, repeatNum: Swift.Int = 1, timeout: Foundation.TimeInterval? = nil, networkKey: Swift.String? = nil, isQueue: Swift.Bool = true, isRetry: Swift.Bool = false, callback: MeshSDK.MXMeshMessageCallBack? = nil)
+  @objc dynamic public func sendMeshMessage(opCode: Swift.String, uuid: Swift.String, elementIndex: Swift.Int = 0, tid: Swift.String? = nil, message: Any, repeatNum: Swift.Int = 1, timeout: Foundation.TimeInterval = 0, networkKey: Swift.String? = nil, isQueue: Swift.Bool = true, isRetry: Swift.Bool = false, callback: MeshSDK.MXMeshMessageCallBack? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func sendMessage(address: Swift.String, opCode: Swift.String, tid: Swift.String? = nil, message: Any, networkKey: Swift.String, repeatNum: Swift.Int = 1, isQueue: Swift.Bool = true)
