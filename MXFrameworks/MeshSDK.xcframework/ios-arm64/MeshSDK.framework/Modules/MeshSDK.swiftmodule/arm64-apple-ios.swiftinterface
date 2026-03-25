@@ -3261,7 +3261,7 @@ public protocol MXAuthenticator {
 }
 public protocol _UInt8Type {
 }
-extension Swift.UInt8 : MeshSDK._UInt8Type {
+extension Swift.UInt8 : _UInt8Type {
 }
 extension Swift.UInt8 {
   public func bits() -> [MXBit]
@@ -5377,9 +5377,9 @@ public struct LightLightnessLastStatus : GenericMessage {
   #endif
 }
 extension MeshSDK {
-  @objc dynamic public func getGATTProxyStatus(uuid: Swift.String, callback: @escaping MXMeshMessageCallBack)
-  @objc dynamic public func getCompositionData(uuid: Swift.String, callback: @escaping MXMeshResultCallBack)
-  @objc dynamic public func getTtl(uuid: Swift.String, callback: @escaping MXMeshResultCallBack)
+  @objc dynamic public func getGATTProxyStatus(uuid: Swift.String, callback: @escaping MeshSDK.MXMeshMessageCallBack)
+  @objc dynamic public func getCompositionData(uuid: Swift.String, callback: @escaping MeshSDK.MXMeshResultCallBack)
+  @objc dynamic public func getTtl(uuid: Swift.String, callback: @escaping MeshSDK.MXMeshResultCallBack)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func resetNode(uuid: Swift.String, callback: MeshSDK.MXMeshResultCallBack? = nil)
   #endif
