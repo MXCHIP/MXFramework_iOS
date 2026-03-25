@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MXAPIManager
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Alamofire
 import CommonCrypto
 import Foundation
@@ -30,7 +30,9 @@ public enum MXHTTPMethod {
   }
 }
 @objc public protocol MXAPIManagerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func mxRequestResult(code: Swift.Int, message: Swift.String?, data: Any?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MXAPIManager : ObjectiveC.NSObject {
   @objc public static let shared: MXAPIManager
@@ -49,10 +51,18 @@ public enum MXHTTPMethod {
   @objc deinit
 }
 extension MXAPIManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func request(path: Swift.String, method: MXHTTPMethod, parameters: [Swift.String : Any]?, timeout: Foundation.TimeInterval? = nil, response: @escaping (_ data: Any?, _ message: Swift.String, _ code: Swift.Int) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func request(path: Swift.String, method: Swift.String, parameters: [Swift.String : Any]?, timeout: Foundation.TimeInterval? = nil, response: @escaping (_ data: Any?, _ message: Swift.String, _ code: Swift.Int) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func request(with url: Swift.String, path: Swift.String, method: MXHTTPMethod, parameters: [Swift.String : Any]?, timeout: Foundation.TimeInterval? = nil, response: @escaping (_ data: Any?, _ message: Swift.String, _ code: Swift.Int) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func upload(file: Foundation.Data, name: Swift.String, fileName: Swift.String, mimeType: Swift.String, path: Swift.String, method: MXHTTPMethod, parameters: Alamofire.Parameters?, timeout: Foundation.TimeInterval? = nil, response: @escaping (_ data: Any?, _ message: Swift.String, _ code: Swift.Int) -> Swift.Void)
+  #endif
   @objc dynamic public func cancleRequest(path: Swift.String)
 }
 extension MXAPIError : Foundation.LocalizedError {}

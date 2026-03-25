@@ -232,6 +232,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -2186,70 +2193,70 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 732,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 836,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 947,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 991,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "FloatLiteral",
       "offset": 1083,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1140,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1196,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mxchip\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXAPIManager\/MXAPIManager\/MXAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 12974,
       "length": 7,

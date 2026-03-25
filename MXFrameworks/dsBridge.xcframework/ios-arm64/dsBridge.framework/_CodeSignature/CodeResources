@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zCDt65U1/nieboLTlA5fuKN2+ec=
+		8pDhRDRZa3m81Pj1yMSwifBRZZU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/DWKWebView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6ZlCsZFRRSeJMPdry4qP9pdyxQg=
-			</data>
 			<key>hash2</key>
 			<data>
 			EY7AR42MKcRIyeHcm9aDXts9B2I+T6Xw7zyifiG5y2Y=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/dsBridge.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lesbCGA7gDDufUqozVkdUqA43Bo=
-			</data>
 			<key>hash2</key>
 			<data>
 			PGO3pIj0uXpuThyGmgf98R8hthXhDFkarDvcAal70J4=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jSG2vqSP7xx7XtK+Q6pqt9yA/QQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			PLflKPhtcKXt43UW/aJ8BA7H5/+MYIUHDnb+ngYlYvw=

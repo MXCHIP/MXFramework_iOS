@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MXAPIManager-Swift.h</key>
 		<data>
-		Dk455ZvqPF4mqBUMxUB0Nh5P9Y8=
+		+OmGUdbyiewtvPWRekkSC/NPwe8=
 		</data>
 		<key>Headers/MXAPIManager.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zj2sSBD3aVISg7AGO2cz9BuMORM=
+		aboQx7b2t7AwM577xx8UIKyGDxA=
 		</data>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		BkDJ+QPnbXXd8lAMcs7x/k0eMnQ=
+		u7mwIDmoQBjPNf4Lxwypqnp6KNM=
 		</data>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		SfCPhsEoB2ei2+F5Qp2H8TmLhkE=
+		dJBP527mFTSNSTBM/VjK08b75vg=
 		</data>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		yZcaPGM8B7SXa4z+dG0pFd+glSQ=
+		UDUyMJ5gP96/8HkfEeTeR9gaoB4=
 		</data>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		SfCPhsEoB2ei2+F5Qp2H8TmLhkE=
+		dJBP527mFTSNSTBM/VjK08b75vg=
 		</data>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FCFpORPimVr/7Blo0tD8JEpQS4g=
+		H4ukKlycADFqFk8K48W3u5vYNB0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -45,21 +45,13 @@
 	<dict>
 		<key>Headers/MXAPIManager-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Dk455ZvqPF4mqBUMxUB0Nh5P9Y8=
-			</data>
 			<key>hash2</key>
 			<data>
-			/3ho4lwosImJrXVduVXXS4VCrQSXqBsh9Y1eTDyj6hQ=
+			3yF5bJy9d8i/WzHwV1jOre0Per/32U7J18RkrTP5YQQ=
 			</data>
 		</dict>
 		<key>Headers/MXAPIManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8LUL0+cQah9Tq/r8ejaViL91FsI=
-			</data>
 			<key>hash2</key>
 			<data>
 			FXtQ7cy9C/66iIZ729lwCoFGVj5SBY/ZKbsyyW6x6kc=
@@ -67,65 +59,41 @@
 		</dict>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BkDJ+QPnbXXd8lAMcs7x/k0eMnQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			4F44s1o10m2ftIWVIEfneIaanZTta/g+ZyJwC0G1kto=
+			agfIXUJzaeMHkhH8oRQ32kd7U9J3bTZ3OiJoOt8hnmc=
 			</data>
 		</dict>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SfCPhsEoB2ei2+F5Qp2H8TmLhkE=
-			</data>
 			<key>hash2</key>
 			<data>
-			7E2tyBl1hO4pMFp1C7kbIlT9QY6cLxGBkTyDeLRvwlQ=
+			p7TtGj7EaucxyjiCbGvhes6xi928SPAlIPNBk+bcPaI=
 			</data>
 		</dict>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yZcaPGM8B7SXa4z+dG0pFd+glSQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			hqAY84DWtYhbooeF6n15632zhLJzlCKP3OrFYmU5toI=
+			XBcgk8vdhsUFz+jNjBIsViXSlymcEXnUBNfisDeFsnM=
 			</data>
 		</dict>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SfCPhsEoB2ei2+F5Qp2H8TmLhkE=
-			</data>
 			<key>hash2</key>
 			<data>
-			7E2tyBl1hO4pMFp1C7kbIlT9QY6cLxGBkTyDeLRvwlQ=
+			p7TtGj7EaucxyjiCbGvhes6xi928SPAlIPNBk+bcPaI=
 			</data>
 		</dict>
 		<key>Modules/MXAPIManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FCFpORPimVr/7Blo0tD8JEpQS4g=
-			</data>
 			<key>hash2</key>
 			<data>
-			/T60G8d8mUAOpn5huz0kqtwUjZz5GdZlRSsKpSJsFBY=
+			Q7AMvvQSJ+SJJ9z5whOqxfyMDWHyvG3ucz41ff0TpWM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HmGqLwnuFz5HgIhSvsskzWluj2w=
-			</data>
 			<key>hash2</key>
 			<data>
 			TQFb0u02FUjLohkyn+BLGWyeFoufe/9tnewsWpXtJpE=
