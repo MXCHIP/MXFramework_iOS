@@ -110576,6 +110576,70 @@
           },
           {
             "kind": "Function",
+            "name": "useProxy",
+            "printedName": "useProxy(bearer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeshBearer",
+                "printedName": "any MeshSDK.MeshBearer",
+                "usr": "s:7MeshSDK0A6BearerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7MeshSDKAAC8useProxy6beareryAA0A6Bearer_p_tF",
+            "mangledName": "$s7MeshSDKAAC8useProxy6beareryAA0A6Bearer_p_tF",
+            "moduleName": "MeshSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "useProxy",
+            "printedName": "useProxy(peripheral:mac:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeshSDK@objc(cs)MeshSDK(im)useProxyWithPeripheral:mac:",
+            "mangledName": "$s7MeshSDKAAC8useProxy10peripheral3macySo12CBPeripheralC_SStF",
+            "moduleName": "MeshSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getCurrentProxyMac",
             "printedName": "getCurrentProxyMac()",
             "children": [

@@ -5077,6 +5077,8 @@ extension MeshSDK {
   #endif
   @objc dynamic public func addMeshProxy(peripheral: CoreBluetooth.CBPeripheral, mac: Swift.String)
   @objc dynamic public func switchProxy(mac: Swift.String)
+  public func useProxy(bearer: any MeshBearer)
+  @objc dynamic public func useProxy(peripheral: CoreBluetooth.CBPeripheral, mac: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func getCurrentProxyMac() -> Swift.String?
   #endif

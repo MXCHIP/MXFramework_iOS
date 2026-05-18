@@ -496,6 +496,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MeshSDK * _N
 - (void)connectWithMac:(NSString * _Nullable)mac;
 - (void)addMeshProxyWithPeripheral:(CBPeripheral * _Nonnull)peripheral mac:(NSString * _Nonnull)mac;
 - (void)switchProxyWithMac:(NSString * _Nonnull)mac;
+- (void)useProxyWithPeripheral:(CBPeripheral * _Nonnull)peripheral mac:(NSString * _Nonnull)mac;
 - (NSString * _Nullable)getCurrentProxyMac SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isConnected SWIFT_WARN_UNUSED_RESULT;
 - (uint16_t)getNextUnicastAddress SWIFT_WARN_UNUSED_RESULT;
