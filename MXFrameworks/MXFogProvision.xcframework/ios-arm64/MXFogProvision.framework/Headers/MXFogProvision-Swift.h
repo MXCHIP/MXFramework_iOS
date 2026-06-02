@@ -324,6 +324,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXEasyLinkProvision * 
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+/// BLE 配网数据加密方式
+typedef SWIFT_ENUM(NSInteger, MXFogBleEncryptionMode, open) {
+/// AES-CBC，zeroPadding，IV 为 16 字节 0（默认，与历史设备兼容）
+  MXFogBleEncryptionModeAesCBC = 0,
+/// AES-GCM，12 字节零 nonce，输出：密文 + 16 字节认证标签
+  MXFogBleEncryptionModeAesGCM = 1,
+};
+
 SWIFT_CLASS("_TtC14MXFogProvision17MXFogBleProvision")
 @interface MXFogBleProvision : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleProvision * _Nonnull shared;)
@@ -358,7 +366,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleProvision * _N
 @end
 
 @interface MXFogBleProvision (SWIFT_EXTENSION(MXFogProvision))
-- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(NSInteger)timeout delegate:(id <MXFogProvisionDelegate> _Nullable)delegate;
+- (void)provisionDeviceWithPeripheral:(CBPeripheral * _Nullable)peripheral productKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(NSInteger)timeout encryptionMode:(enum MXFogBleEncryptionMode)encryptionMode delegate:(id <MXFogProvisionDelegate> _Nullable)delegate;
 - (void)cleanProvisionCache;
 - (void)startTimer;
 - (void)stopTimer;

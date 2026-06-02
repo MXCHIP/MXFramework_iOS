@@ -3171,7 +3171,7 @@
           {
             "kind": "Function",
             "name": "provisionDevice",
-            "printedName": "provisionDevice(peripheral:productKey:deviceName:timeout:delegate:)",
+            "printedName": "provisionDevice(peripheral:productKey:deviceName:timeout:encryptionMode:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3214,6 +3214,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "MXFogBleEncryptionMode",
+                "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                "hasDefaultArg": true,
+                "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "(any MXFogProvision.MXFogProvisionDelegate)?",
                 "children": [
@@ -3228,8 +3235,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleProvision(im)provisionDeviceWithPeripheral:productKey:deviceName:timeout:delegate:",
-            "mangledName": "$s14MXFogProvision0a3BleB0C15provisionDevice10peripheral10productKey10deviceName7timeout8delegateySo12CBPeripheralCSg_S2SSiAA0aB8Delegate_pSgtF",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleProvision(im)provisionDeviceWithPeripheral:productKey:deviceName:timeout:encryptionMode:delegate:",
+            "mangledName": "$s14MXFogProvision0a3BleB0C15provisionDevice10peripheral10productKey10deviceName7timeout14encryptionMode8delegateySo12CBPeripheralCSg_S2SSiAA0ac10EncryptionM0OAA0aB8Delegate_pSgtF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "Dynamic",
@@ -4005,6 +4012,360 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "MXFogProvision"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXFogBleEncryptionMode",
+        "printedName": "MXFogBleEncryptionMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "aesCBC",
+            "printedName": "aesCBC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleEncryptionMode.Type) -> MXFogProvision.MXFogBleEncryptionMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleEncryptionMode",
+                    "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                    "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleEncryptionMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleEncryptionMode",
+                        "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                        "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode@MXFogBleEncryptionModeAesCBC",
+            "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO6aesCBCyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "aesGCM",
+            "printedName": "aesGCM",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleEncryptionMode.Type) -> MXFogProvision.MXFogBleEncryptionMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleEncryptionMode",
+                    "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                    "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleEncryptionMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleEncryptionMode",
+                        "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                        "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode@MXFogBleEncryptionModeAesGCM",
+            "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO6aesGCMyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MXFogBleEncryptionMode",
+                "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MXFogProvision0A17BleEncryptionModeO4fromyACSSFZ",
+            "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO4fromyACSSFZ",
+            "moduleName": "MXFogProvision",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MXFogProvision.MXFogBleEncryptionMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleEncryptionMode",
+                    "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                    "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MXFogProvision0A17BleEncryptionModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO8rawValueACSgSi_tcfc",
+            "moduleName": "MXFogProvision",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MXFogProvision0A17BleEncryptionModeO8rawValueSivp",
+            "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO8rawValueSivp",
+            "moduleName": "MXFogProvision",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A17BleEncryptionModeO8rawValueSivg",
+                "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO8rawValueSivg",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode",
+        "mangledName": "$s14MXFogProvision0A17BleEncryptionModeO",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "mxFogGCMNonce",
+        "printedName": "mxFogGCMNonce(from:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14MXFogProvision13mxFogGCMNonce4from10Foundation4DataVSSSg_tF",
+        "mangledName": "$s14MXFogProvision13mxFogGCMNonce4from10Foundation4DataVSSSg_tF",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "mxFogPerformGCMEncrypt",
+        "printedName": "mxFogPerformGCMEncrypt(data:key:nonceData:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Foundation.Data?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14MXFogProvision22mxFogPerformGCMEncrypt4data3key9nonceData10Foundation0J0VSgAH_A2HtF",
+        "mangledName": "$s14MXFogProvision22mxFogPerformGCMEncrypt4data3key9nonceData10Foundation0J0VSgAH_A2HtF",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -5581,23 +5942,37 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
-      "offset": 1141,
+      "offset": 1198,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
-      "offset": 1690,
+      "offset": 1747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
-      "offset": 6153,
+      "offset": 6986,
       "length": 2,
       "value": "30"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleEncryption.swift",
+      "kind": "IntegerLiteral",
+      "offset": 343,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleEncryption.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXEasyLink\/MXEasyLink.swift",

@@ -118,7 +118,7 @@ public func mxFogHexToData(hex: Swift.String) -> Foundation.Data
 }
 extension MXFogBleProvision {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func provisionDevice(peripheral: CoreBluetooth.CBPeripheral? = nil, productKey: Swift.String, deviceName: Swift.String, timeout: Swift.Int = 30, delegate: (any MXFogProvisionDelegate)?)
+  @objc dynamic public func provisionDevice(peripheral: CoreBluetooth.CBPeripheral? = nil, productKey: Swift.String, deviceName: Swift.String, timeout: Swift.Int = 30, encryptionMode: MXFogBleEncryptionMode = .aesCBC, delegate: (any MXFogProvisionDelegate)?)
   #endif
   @objc dynamic public func cleanProvisionCache()
   @objc dynamic public func startTimer()
@@ -157,6 +157,24 @@ extension MXFogBleProvision : CoreBluetooth.CBCentralManagerDelegate, CoreBlueto
   #endif
   @objc dynamic public func peripheralIsReady(toSendWriteWithoutResponse peripheral: CoreBluetooth.CBPeripheral)
 }
+@objc public enum MXFogBleEncryptionMode : Swift.Int {
+  case aesCBC = 0
+  case aesGCM = 1
+  public static func from(_ value: Swift.String) -> MXFogBleEncryptionMode
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+#if compiler(>=5.3) && $NonescapableTypes
+public func mxFogGCMNonce(from random: Swift.String?) -> Foundation.Data
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+public func mxFogPerformGCMEncrypt(data: Foundation.Data, key: Foundation.Data, nonceData: Foundation.Data) -> Foundation.Data?
+#endif
 public let AWS_ECHO_SERVER_PORT: Swift.UInt16
 public let AWS_ECHO_CLIENT_PORT: Swift.UInt16
 public struct EasyLinkConfigKeys {
@@ -203,3 +221,6 @@ extension EasyLink {
 extension MXFogBleProvisionResultCode : Swift.Equatable {}
 extension MXFogBleProvisionResultCode : Swift.Hashable {}
 extension MXFogBleProvisionResultCode : Swift.RawRepresentable {}
+extension MXFogBleEncryptionMode : Swift.Equatable {}
+extension MXFogBleEncryptionMode : Swift.Hashable {}
+extension MXFogBleEncryptionMode : Swift.RawRepresentable {}
