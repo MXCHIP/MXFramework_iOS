@@ -471,7 +471,7 @@ extension MXAddDeviceStepViewController: MXFogProvisionDelegate {
     func startWifiProvision(info: MXProvisionDeviceInfo) {
         info.refreshStep(step: 0)
         
-        if info.productInfo?.link_type_id == 12, let pk = info.productInfo?.product_key, let dn = info.deviceName { //蓝牙辅助(fog）
+        if let pk = info.productInfo?.product_key, let dn = info.deviceName { //蓝牙辅助(fog）
             MXFogBleProvision.shared.provisionDevice(peripheral: info.peripheral, productKey: pk, deviceName: dn, delegate: self)
         }
     }
