@@ -403,6 +403,7 @@ SWIFT_PROTOCOL("_TtP14MXFogProvision22MXFogProvisionDelegate_")
 - (void)mxFogProvisionRequestRandomWithProductKey:(NSString * _Nullable)productKey deviceName:(NSString * _Nullable)deviceName handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)mxFogProvisionRequestBleKeyWithProductKey:(NSString * _Nullable)productKey deviceName:(NSString * _Nullable)deviceName random:(NSString * _Nullable)random cipher:(NSString * _Nullable)cipher handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)mxFogProvisionInputWifiInfoWithProductKey:(NSString * _Nullable)productKey deviceName:(NSString * _Nullable)deviceName handler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nullable, NSDictionary<NSString *, id> * _Nullable))handler;
+- (void)mxFogProvisionReceiveDeviceLogWithLog:(NSString * _Nonnull)log;
 @end
 
 #endif

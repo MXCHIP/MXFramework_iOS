@@ -43,6 +43,7 @@ extension MXFogBleScan : CoreBluetooth.CBCentralManagerDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func mxFogProvisionInputWifiInfo(productKey: Swift.String?, deviceName: Swift.String?, handler: @escaping (_ ssid: Swift.String, _ password: Swift.String?, _ customParams: [Swift.String : Any]?) -> Swift.Void)
   #endif
+  @objc optional func mxFogProvisionReceiveDeviceLog(log: Swift.String)
 }
 public enum MXFogBleProvisionResultCode : Swift.Int {
   case ResultCode_Success
@@ -68,6 +69,9 @@ public enum MXFogBleProvisionResultCode : Swift.Int {
   public func mxFog_segment(_ data: Foundation.Data, toMtu mtu: Swift.Int) -> [Foundation.Data]
   #if compiler(>=5.3) && $NonescapableTypes
   public func mxFog_reassemble(_ data: Foundation.Data) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func mxFogLog_reassemble(_ data: Foundation.Data) -> Foundation.Data?
   #endif
   @objc override dynamic public init()
   @objc deinit

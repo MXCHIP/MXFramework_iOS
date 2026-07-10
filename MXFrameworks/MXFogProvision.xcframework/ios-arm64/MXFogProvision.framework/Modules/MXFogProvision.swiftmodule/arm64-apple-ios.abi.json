@@ -1017,6 +1017,39 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mxFogProvisionReceiveDeviceLog",
+            "printedName": "mxFogProvisionReceiveDeviceLog(log:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MXFogProvision@objc(pl)MXFogProvisionDelegate(im)mxFogProvisionReceiveDeviceLogWithLog:",
+            "mangledName": "$s14MXFogProvision0aB8DelegateP05mxFogB16ReceiveDeviceLog3logySS_tF",
+            "moduleName": "MXFogProvision",
+            "genericSig": "<τ_0_0 where τ_0_0 : MXFogProvision.MXFogProvisionDelegate>",
+            "sugared_genericSig": "<Self where Self : MXFogProvision.MXFogProvisionDelegate>",
+            "protocolReq": true,
+            "objc_name": "mxFogProvisionReceiveDeviceLogWithLog:",
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1707,6 +1740,41 @@
             "declKind": "Func",
             "usr": "s:14MXFogProvision0A24BluetoothProtocolHandlerC16mxFog_reassembley10Foundation4DataVSgAGF",
             "mangledName": "$s14MXFogProvision0A24BluetoothProtocolHandlerC16mxFog_reassembley10Foundation4DataVSgAGF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mxFogLog_reassemble",
+            "printedName": "mxFogLog_reassemble(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MXFogProvision0A24BluetoothProtocolHandlerC19mxFogLog_reassembley10Foundation4DataVSgAGF",
+            "mangledName": "$s14MXFogProvision0A24BluetoothProtocolHandlerC19mxFogLog_reassembley10Foundation4DataVSgAGF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "AccessControl"
@@ -5906,57 +5974,64 @@
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
+      "kind": "BooleanLiteral",
+      "offset": 860,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
-      "offset": 783,
+      "offset": 916,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 945,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
-      "offset": 856,
+      "offset": 989,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
-      "offset": 920,
+      "offset": 1053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
-      "offset": 966,
+      "offset": 1099,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
-      "offset": 1198,
+      "offset": 1331,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "BooleanLiteral",
-      "offset": 1747,
+      "offset": 1880,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleProvision.swift",
       "kind": "IntegerLiteral",
-      "offset": 6986,
+      "offset": 7119,
       "length": 2,
       "value": "30"
     },
