@@ -332,6 +332,49 @@ typedef SWIFT_ENUM(NSInteger, MXFogBleEncryptionMode, open) {
   MXFogBleEncryptionModeAesGCM = 1,
 };
 
+SWIFT_CLASS("_TtC14MXFogProvision19MXFogBleGattManager")
+@interface MXFogBleGattManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleGattManager * _Nonnull shard;)
++ (MXFogBleGattManager * _Nonnull)shard SWIFT_WARN_UNUSED_RESULT;
++ (void)setShard:(MXFogBleGattManager * _Nonnull)value;
+@property (nonatomic, weak) id <MXFogProvisionDelegate> _Nullable delegate;
+@property (nonatomic, copy) void (^ _Nullable connectCallback)(BOOL, NSError * _Nullable);
+@property (nonatomic, copy) void (^ _Nullable sendMessageCallback)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable);
+@property (nonatomic, copy) void (^ _Nullable statusCallback)(NSInteger);
+@property (nonatomic, copy) void (^ _Nullable receiveMessageCallback)(NSDictionary<NSString *, id> * _Nonnull);
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)sendMessageWithParams:(NSDictionary<NSString *, id> * _Nonnull)params timeout:(double)timeout callback:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))callback;
+@end
+
+@interface MXFogBleGattManager (SWIFT_EXTENSION(MXFogProvision))
+- (void)connectDeviceWithProductKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(double)timeout callback:(void (^ _Nullable)(BOOL, NSError * _Nullable))callback;
+- (void)disConnect;
+- (NSString * _Nullable)createRandom SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class CBCentralManager;
+@class CBPeripheral;
+@class NSNumber;
+@class CBService;
+@class CBCharacteristic;
+@interface MXFogBleGattManager (SWIFT_EXTENSION(MXFogProvision)) <CBCentralManagerDelegate, CBPeripheralDelegate>
+- (void)startScan;
+- (void)stopScan;
+- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didConnectPeripheral:(CBPeripheral * _Nonnull)peripheral;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didFailToConnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverServices:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverCharacteristicsForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didModifyServices:(NSArray<CBService *> * _Nonnull)invalidatedServices;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didWriteValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+- (void)peripheralIsReadyToSendWriteWithoutResponse:(CBPeripheral * _Nonnull)peripheral;
+@end
+
 SWIFT_CLASS("_TtC14MXFogProvision17MXFogBleProvision")
 @interface MXFogBleProvision : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleProvision * _Nonnull shared;)
@@ -344,11 +387,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleProvision * _N
 - (void)setConnectTimeOutWithTimeNum:(NSInteger)timeNum;
 @end
 
-@class CBCentralManager;
-@class CBPeripheral;
-@class NSNumber;
-@class CBService;
-@class CBCharacteristic;
 @interface MXFogBleProvision (SWIFT_EXTENSION(MXFogProvision)) <CBCentralManagerDelegate, CBPeripheralDelegate>
 - (void)startScan;
 - (void)stopScan;

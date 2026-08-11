@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MXFogProvision-Swift.h</key>
 		<data>
-		I91wvFun/uhgKGUmF7VMEDRsrBY=
+		kUEYLYmlSbZ3UVB1HFD+DyTqm1c=
 		</data>
 		<key>Headers/MXFogProvision.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		frL8FhFciTi4kF0ReV0DPwtPS+k=
+		ayvjUgTe/SRxcttekhN5ZF6Icbg=
 		</data>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		/+l70OnsYn7M4JOBkn+KjCvMfro=
+		G6sTp7gOmZpyLx+usCdBKlXyJB8=
 		</data>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bk77YteWvM/uAgEcoIEI/47EsOw=
+		b3WhALZ7TRo3kR9IcJHKIXfEcb4=
 		</data>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/+l70OnsYn7M4JOBkn+KjCvMfro=
+		G6sTp7gOmZpyLx+usCdBKlXyJB8=
 		</data>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CaO/9SSlnzkfVnw/Lhzsgo2vH28=
+		AV8slFAge0NKCg6YconrdewROzc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQT4sP+jEXToWjHNzoirp2Prn/MsZbTfL6H6ssXspVo=
+			0fPREdQr0M8bjCt4t6uNmPOUgPSYCb0CP10h9TDwcEg=
 			</data>
 		</dict>
 		<key>Headers/MXFogProvision.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6+Lc2/DCw36BgzD247sVp3Z6RkPyO7nFX5a3+HqqSq0=
+			zfeE/CgtM1UMQpz1j0HPWdZxyhBbJWZteBiIFBTenhs=
 			</data>
 		</dict>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fgz2KLHgofs2psPe792PS8qtMcr9p8q8XMvUcVJPipg=
+			5UWctSy5Kl8PyDkJajqIgNaRfkcWe2X25ddjjk8fBZQ=
 			</data>
 		</dict>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5GVdvAoXoctK5EFoExMYa5R+smt3icyvXoekI50I+zU=
+			rB9gMB/OEaOFoRHA9/1IOX5KsNG6dw893ABcVLr4xK0=
 			</data>
 		</dict>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fgz2KLHgofs2psPe792PS8qtMcr9p8q8XMvUcVJPipg=
+			5UWctSy5Kl8PyDkJajqIgNaRfkcWe2X25ddjjk8fBZQ=
 			</data>
 		</dict>
 		<key>Modules/MXFogProvision.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pt5RykliXsEULECxm5VoRX6UEhmoxVnhnt22fqjdImQ=
+			d1Zfc94KOhQv0C7zTjKpAJIDjIRpT/B+FtpSgVD2who=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

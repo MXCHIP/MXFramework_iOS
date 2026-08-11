@@ -547,6 +547,120 @@
         ]
       },
       {
+        "kind": "Var",
+        "name": "MXProvisionLogEnabled",
+        "printedName": "MXProvisionLogEnabled",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:14MXFogProvision21MXProvisionLogEnabledSbvp",
+        "mangledName": "$s14MXFogProvision21MXProvisionLogEnabledSbvp",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:14MXFogProvision21MXProvisionLogEnabledSbvg",
+            "mangledName": "$s14MXFogProvision21MXProvisionLogEnabledSbvg",
+            "moduleName": "MXFogProvision",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:14MXFogProvision21MXProvisionLogEnabledSbvs",
+            "mangledName": "$s14MXFogProvision21MXProvisionLogEnabledSbvs",
+            "moduleName": "MXFogProvision",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:14MXFogProvision21MXProvisionLogEnabledSbvM",
+            "mangledName": "$s14MXFogProvision21MXProvisionLogEnabledSbvM",
+            "moduleName": "MXFogProvision",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "mxProvisionLog",
+        "printedName": "mxProvisionLog(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14MXFogProvision02mxB3LogyyxlF",
+        "mangledName": "$s14MXFogProvision02mxB3LogyyxlF",
+        "moduleName": "MXFogProvision",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MXFogProvisionDelegate",
         "printedName": "MXFogProvisionDelegate",
@@ -1091,8 +1205,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MXFogBleProvisionResultCode",
-        "printedName": "MXFogBleProvisionResultCode",
+        "name": "MXFogBleResultCode",
+        "printedName": "MXFogBleResultCode",
         "children": [
           {
             "kind": "Var",
@@ -1102,24 +1216,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1127,8 +1241,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE8_SuccessyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE8_SuccessyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE8_SuccessyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE8_SuccessyA2CmF",
             "moduleName": "MXFogProvision"
           },
           {
@@ -1139,24 +1253,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1164,8 +1278,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE8_TimeoutyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE8_TimeoutyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE8_TimeoutyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE8_TimeoutyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1179,24 +1293,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1204,8 +1318,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE17_BluetoothNotOpenyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE17_BluetoothNotOpenyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE17_BluetoothNotOpenyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE17_BluetoothNotOpenyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1219,24 +1333,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1244,8 +1358,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE5_FailyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE5_FailyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE5_FailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE5_FailyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1259,24 +1373,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1284,8 +1398,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE15_NotFoundDeviceyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE15_NotFoundDeviceyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE15_NotFoundDeviceyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE15_NotFoundDeviceyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1299,24 +1413,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1324,8 +1438,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE12_ConnectFailyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE12_ConnectFailyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE12_ConnectFailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE12_ConnectFailyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1339,24 +1453,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1364,8 +1478,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE16_NotFoundServiceyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE16_NotFoundServiceyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE16_NotFoundServiceyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE16_NotFoundServiceyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1379,24 +1493,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1404,8 +1518,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE24_NotFoundCharacteristicsyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE24_NotFoundCharacteristicsyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE24_NotFoundCharacteristicsyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE24_NotFoundCharacteristicsyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1419,24 +1533,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1444,8 +1558,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE26_NotifyCharacteristicsFailyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE26_NotifyCharacteristicsFailyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE26_NotifyCharacteristicsFailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE26_NotifyCharacteristicsFailyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1459,24 +1573,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1484,8 +1598,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE16_ConnectWifiFailyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE16_ConnectWifiFailyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE16_ConnectWifiFailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE16_ConnectWifiFailyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1499,24 +1613,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MXFogProvision.MXFogBleProvisionResultCode.Type) -> MXFogProvision.MXFogBleProvisionResultCode",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode.Type",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MXFogBleProvisionResultCode",
-                        "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
                       }
                     ]
                   }
@@ -1524,8 +1638,288 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO0dE17_ConnectCloudFailyA2CmF",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO0dE17_ConnectCloudFailyA2CmF",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE17_ConnectCloudFailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE17_ConnectCloudFailyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_NotRandom",
+            "printedName": "ResultCode_NotRandom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE10_NotRandomyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE10_NotRandomyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_NotCipher",
+            "printedName": "ResultCode_NotCipher",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE10_NotCipheryA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE10_NotCipheryA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_NotBleKey",
+            "printedName": "ResultCode_NotBleKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0de4_NotC3KeyyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0de4_NotC3KeyyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_Encrypt_Fail",
+            "printedName": "ResultCode_Encrypt_Fail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE13_Encrypt_FailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE13_Encrypt_FailyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_Decrypt_Fail",
+            "printedName": "ResultCode_Decrypt_Fail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE13_Decrypt_FailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE13_Decrypt_FailyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_Message_Send_Fail",
+            "printedName": "ResultCode_Message_Send_Fail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE18_Message_Send_FailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE18_Message_Send_FailyA2CmF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ResultCode_Message_Format_Fail",
+            "printedName": "ResultCode_Message_Format_Fail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MXFogProvision.MXFogBleResultCode.Type) -> MXFogProvision.MXFogBleResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MXFogProvision.MXFogBleResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogBleResultCode",
+                        "printedName": "MXFogProvision.MXFogBleResultCode",
+                        "usr": "s:14MXFogProvision0A13BleResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO0dE20_Message_Format_FailyA2CmF",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO0dE20_Message_Format_FailyA2CmF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "RawDocComment"
@@ -1539,13 +1933,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MXFogProvision.MXFogBleProvisionResultCode?",
+                "printedName": "MXFogProvision.MXFogBleResultCode?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXFogBleProvisionResultCode",
-                    "printedName": "MXFogProvision.MXFogBleProvisionResultCode",
-                    "usr": "s:14MXFogProvision0a3BleB10ResultCodeO"
+                    "name": "MXFogBleResultCode",
+                    "printedName": "MXFogProvision.MXFogBleResultCode",
+                    "usr": "s:14MXFogProvision0A13BleResultCodeO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1558,8 +1952,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO8rawValueACSgSi_tcfc",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO8rawValueACSgSi_tcfc",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO8rawValueACSgSi_tcfc",
             "moduleName": "MXFogProvision",
             "implicit": true,
             "init_kind": "Designated"
@@ -1577,8 +1971,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14MXFogProvision0a3BleB10ResultCodeO8rawValueSivp",
-            "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO8rawValueSivp",
+            "usr": "s:14MXFogProvision0A13BleResultCodeO8rawValueSivp",
+            "mangledName": "$s14MXFogProvision0A13BleResultCodeO8rawValueSivp",
             "moduleName": "MXFogProvision",
             "implicit": true,
             "accessors": [
@@ -1595,8 +1989,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXFogProvision0a3BleB10ResultCodeO8rawValueSivg",
-                "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO8rawValueSivg",
+                "usr": "s:14MXFogProvision0A13BleResultCodeO8rawValueSivg",
+                "mangledName": "$s14MXFogProvision0A13BleResultCodeO8rawValueSivg",
                 "moduleName": "MXFogProvision",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1605,8 +1999,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:14MXFogProvision0a3BleB10ResultCodeO",
-        "mangledName": "$s14MXFogProvision0a3BleB10ResultCodeO",
+        "usr": "s:14MXFogProvision0A13BleResultCodeO",
+        "mangledName": "$s14MXFogProvision0A13BleResultCodeO",
         "moduleName": "MXFogProvision",
         "declAttributes": [
           "AccessControl"
@@ -4093,6 +4487,2006 @@
       },
       {
         "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "MXFogProvision"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MXFogBleGattManager",
+        "printedName": "MXFogBleGattManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shard",
+            "printedName": "shard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MXFogBleGattManager",
+                "printedName": "MXFogProvision.MXFogBleGattManager",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(cpy)shard",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC5shardACvpZ",
+            "moduleName": "MXFogProvision",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleGattManager",
+                    "printedName": "MXFogProvision.MXFogBleGattManager",
+                    "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(cm)shard",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC5shardACvgZ",
+                "moduleName": "MXFogProvision",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogBleGattManager",
+                    "printedName": "MXFogProvision.MXFogBleGattManager",
+                    "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(cm)setShard:",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC5shardACvsZ",
+                "moduleName": "MXFogProvision",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A14BleGattManagerC5shardACvMZ",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC5shardACvMZ",
+                "moduleName": "MXFogProvision",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any MXFogProvision.MXFogProvisionDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(py)delegate",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC8delegateAA0aB8Delegate_pSgvp",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MXFogProvision.MXFogProvisionDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogProvisionDelegate",
+                        "printedName": "any MXFogProvision.MXFogProvisionDelegate",
+                        "usr": "c:@M@MXFogProvision@objc(pl)MXFogProvisionDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)delegate",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC8delegateAA0aB8Delegate_pSgvg",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any MXFogProvision.MXFogProvisionDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXFogProvisionDelegate",
+                        "printedName": "any MXFogProvision.MXFogProvisionDelegate",
+                        "usr": "c:@M@MXFogProvision@objc(pl)MXFogProvisionDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)setDelegate:",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC8delegateAA0aB8Delegate_pSgvs",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A14BleGattManagerC8delegateAA0aB8Delegate_pSgvM",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC8delegateAA0aB8Delegate_pSgvM",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectCallback",
+            "printedName": "connectCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(py)connectCallback",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC15connectCallbackySb_s5Error_pSgtcSgvp",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "(any Swift.Error)?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "any Swift.Error",
+                                    "usr": "s:s5ErrorP"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)connectCallback",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC15connectCallbackySb_s5Error_pSgtcSgvg",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "(any Swift.Error)?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "any Swift.Error",
+                                    "usr": "s:s5ErrorP"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)setConnectCallback:",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC15connectCallbackySb_s5Error_pSgtcSgvs",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A14BleGattManagerC15connectCallbackySb_s5Error_pSgtcSgvM",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC15connectCallbackySb_s5Error_pSgtcSgvM",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sendMessageCallback",
+            "printedName": "sendMessageCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([Swift.String : Any]?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(py)sendMessageCallback",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC19sendMessageCallbackySDySSypGSg_s5Error_pSgtcSgvp",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(([Swift.String : Any]?, (any Swift.Error)?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String : Any]?, (any Swift.Error)?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "([Swift.String : Any]?, (any Swift.Error)?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "[Swift.String : Any]?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Dictionary",
+                                    "printedName": "[Swift.String : Any]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "String",
+                                        "printedName": "Swift.String",
+                                        "usr": "s:SS"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "ProtocolComposition",
+                                        "printedName": "Any"
+                                      }
+                                    ],
+                                    "usr": "s:SD"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "(any Swift.Error)?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "any Swift.Error",
+                                    "usr": "s:s5ErrorP"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)sendMessageCallback",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC19sendMessageCallbackySDySSypGSg_s5Error_pSgtcSgvg",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(([Swift.String : Any]?, (any Swift.Error)?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String : Any]?, (any Swift.Error)?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "([Swift.String : Any]?, (any Swift.Error)?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "[Swift.String : Any]?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Dictionary",
+                                    "printedName": "[Swift.String : Any]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "String",
+                                        "printedName": "Swift.String",
+                                        "usr": "s:SS"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "ProtocolComposition",
+                                        "printedName": "Any"
+                                      }
+                                    ],
+                                    "usr": "s:SD"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "(any Swift.Error)?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "any Swift.Error",
+                                    "usr": "s:s5ErrorP"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)setSendMessageCallback:",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC19sendMessageCallbackySDySSypGSg_s5Error_pSgtcSgvs",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A14BleGattManagerC19sendMessageCallbackySDySSypGSg_s5Error_pSgtcSgvM",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC19sendMessageCallbackySDySSypGSg_s5Error_pSgtcSgvM",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusCallback",
+            "printedName": "statusCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(py)statusCallback",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC14statusCallbackySicSgvp",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)statusCallback",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC14statusCallbackySicSgvg",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)setStatusCallback:",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC14statusCallbackySicSgvs",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A14BleGattManagerC14statusCallbackySicSgvM",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC14statusCallbackySicSgvM",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "receiveMessageCallback",
+            "printedName": "receiveMessageCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(py)receiveMessageCallback",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC22receiveMessageCallbackySDySSypGcSgvp",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(([Swift.String : Any]) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String : Any]) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)receiveMessageCallback",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC22receiveMessageCallbackySDySSypGcSgvg",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(([Swift.String : Any]) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String : Any]) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)setReceiveMessageCallback:",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC22receiveMessageCallbackySDySSypGcSgvs",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXFogProvision0A14BleGattManagerC22receiveMessageCallbackySDySSypGcSgvM",
+                "mangledName": "$s14MXFogProvision0A14BleGattManagerC22receiveMessageCallbackySDySSypGcSgvM",
+                "moduleName": "MXFogProvision",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sendMessage",
+            "printedName": "sendMessage(params:timeout:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([Swift.String : Any]?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager(im)sendMessageWithParams:timeout:callback:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC11sendMessage6params7timeout8callbackySDySSypG_SdyAHSg_s5Error_pSgtcSgtF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectDevice",
+            "printedName": "connectDevice(productKey:deviceName:timeout:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)connectDeviceWithProductKey:deviceName:timeout:callback:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC13connectDevice10productKey10deviceName7timeout8callbackySS_SSSdySb_s5Error_pSgtcSgtF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disConnect",
+            "printedName": "disConnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)disConnect",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10disConnectyyF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createRandom",
+            "printedName": "createRandom()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)createRandom",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC12createRandomSSSgyF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createBleKey",
+            "printedName": "createBleKey(secret:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)createBleKeyWithSecret:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC06createC3Key6secretSSSgSS_tF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startScan",
+            "printedName": "startScan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)startScan",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC9startScanyyF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScan",
+            "printedName": "stopScan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)stopScan",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC8stopScanyyF",
+            "moduleName": "MXFogProvision",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManagerDidUpdateState",
+            "printedName": "centralManagerDidUpdateState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)centralManagerDidUpdateState:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC07centralE14DidUpdateStateyySo09CBCentralE0CF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "centralManagerDidUpdateState:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didDiscover:advertisementData:rssi:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC07centralE0_11didDiscover17advertisementData4rssiySo09CBCentralE0C_So12CBPeripheralCSDySSypGSo8NSNumberCtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didConnect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)centralManager:didConnectPeripheral:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC07centralE0_10didConnectySo09CBCentralE0C_So12CBPeripheralCtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "centralManager:didConnectPeripheral:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didFailToConnect:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)centralManager:didFailToConnectPeripheral:error:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC07centralE0_16didFailToConnect5errorySo09CBCentralE0C_So12CBPeripheralCs5Error_pSgtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "centralManager:didFailToConnectPeripheral:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverServices:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheral:didDiscoverServices:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10peripheral_19didDiscoverServicesySo12CBPeripheralC_s5Error_pSgtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheral:didDiscoverServices:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverCharacteristicsFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBService",
+                "printedName": "CoreBluetooth.CBService",
+                "usr": "c:objc(cs)CBService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheral:didDiscoverCharacteristicsForService:error:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10peripheral_29didDiscoverCharacteristicsFor5errorySo12CBPeripheralC_So9CBServiceCs5Error_pSgtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheral:didDiscoverCharacteristicsForService:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didModifyServices:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreBluetooth.CBService]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBService",
+                    "printedName": "CoreBluetooth.CBService",
+                    "usr": "c:objc(cs)CBService"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheral:didModifyServices:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10peripheral_17didModifyServicesySo12CBPeripheralC_SaySo9CBServiceCGtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheral:didModifyServices:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didUpdateNotificationStateFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheral:didUpdateNotificationStateForCharacteristic:error:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10peripheral_29didUpdateNotificationStateFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheral:didUpdateNotificationStateForCharacteristic:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didUpdateValueFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheral:didUpdateValueForCharacteristic:error:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10peripheral_17didUpdateValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheral:didUpdateValueForCharacteristic:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didWriteValueFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheral:didWriteValueForCharacteristic:error:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC10peripheral_16didWriteValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheral:didWriteValueForCharacteristic:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheralIsReady",
+            "printedName": "peripheralIsReady(toSendWriteWithoutResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)peripheralIsReadyToSendWriteWithoutResponse:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC17peripheralIsReady26toSendWriteWithoutResponseySo12CBPeripheralC_tF",
+            "moduleName": "MXFogProvision",
+            "objc_name": "peripheralIsReadyToSendWriteWithoutResponse:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MXFogProvision@objc(cs)MXFogBleGattManager",
+        "mangledName": "$s14MXFogProvision0A14BleGattManagerC",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CryptoKit",
         "printedName": "CryptoKit",
         "declKind": "Import",
@@ -5812,114 +8206,170 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXFogProvisionDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 217,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 170,
+      "offset": 161,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 220,
+      "offset": 211,
       "length": 5,
       "value": "10002"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 268,
       "length": 5,
       "value": "10003"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 331,
+      "offset": 322,
       "length": 5,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 375,
       "length": 5,
       "value": "20001"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 446,
+      "offset": 437,
       "length": 5,
       "value": "20002"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 509,
+      "offset": 500,
       "length": 5,
       "value": "20003"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 583,
+      "offset": 574,
       "length": 5,
       "value": "20004"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 660,
+      "offset": 651,
       "length": 5,
       "value": "20005"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 726,
+      "offset": 717,
       "length": 5,
       "value": "20006"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 796,
+      "offset": 787,
       "length": 5,
       "value": "20007"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
+      "offset": 847,
+      "length": 5,
+      "value": "30001"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 900,
+      "length": 5,
+      "value": "30002"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 5,
+      "value": "30003"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1009,
+      "length": 5,
+      "value": "40001"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1065,
+      "length": 5,
+      "value": "40002"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1126,
+      "length": 5,
+      "value": "50001"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1189,
+      "length": 5,
+      "value": "50002"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1277,
       "length": 4,
       "value": "0b00"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 917,
+      "offset": 1309,
       "length": 4,
       "value": "0b01"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 949,
+      "offset": 1341,
       "length": 4,
       "value": "0b10"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 981,
+      "offset": 1373,
       "length": 4,
       "value": "0b11"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBluetoothProtocolHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1307,
+      "offset": 1699,
       "length": 4,
       "value": "0x02"
     },
@@ -6034,6 +8484,48 @@
       "offset": 7119,
       "length": 2,
       "value": "30"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
+      "kind": "StringLiteral",
+      "offset": 287,
+      "length": 16,
+      "value": "\"com.mxBle.lock\""
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
+      "kind": "Array",
+      "offset": 337,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 979,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1471,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2094,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6130,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleEncryption.swift",
