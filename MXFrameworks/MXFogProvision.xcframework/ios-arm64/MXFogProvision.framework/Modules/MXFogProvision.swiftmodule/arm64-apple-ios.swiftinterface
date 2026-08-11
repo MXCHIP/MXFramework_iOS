@@ -184,7 +184,7 @@ extension MXFogBleProvision : CoreBluetooth.CBCentralManagerDelegate, CoreBlueto
 }
 extension MXFogBleGattManager {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public func connectDevice(productKey: Swift.String, deviceName: Swift.String, timeout: Swift.Double = 5, callback: ((Swift.Bool, _ error: (any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public func connectDevice(productKey: Swift.String, deviceName: Swift.String, timeout: Swift.Double = 5, callback: ((Swift.Bool, _ error: (any Swift.Error)?) -> Swift.Void)?, encryptionMode: MXFogBleEncryptionMode = .aesCBC, delegate: (any MXFogProvisionDelegate)?)
   #endif
   @objc dynamic public func disConnect()
   #if compiler(>=5.3) && $NonescapableTypes

@@ -348,7 +348,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MXFogBleGattManager * 
 @end
 
 @interface MXFogBleGattManager (SWIFT_EXTENSION(MXFogProvision))
-- (void)connectDeviceWithProductKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(double)timeout callback:(void (^ _Nullable)(BOOL, NSError * _Nullable))callback;
+- (void)connectDeviceWithProductKey:(NSString * _Nonnull)productKey deviceName:(NSString * _Nonnull)deviceName timeout:(double)timeout callback:(void (^ _Nullable)(BOOL, NSError * _Nullable))callback encryptionMode:(enum MXFogBleEncryptionMode)encryptionMode delegate:(id <MXFogProvisionDelegate> _Nullable)delegate;
 - (void)disConnect;
 - (NSString * _Nullable)createRandom SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)createBleKeyWithSecret:(NSString * _Nonnull)secret SWIFT_WARN_UNUSED_RESULT;

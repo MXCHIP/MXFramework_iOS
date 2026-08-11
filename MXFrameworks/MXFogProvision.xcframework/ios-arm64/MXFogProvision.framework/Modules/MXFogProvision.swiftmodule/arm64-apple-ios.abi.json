@@ -5661,6 +5661,7 @@
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -5668,7 +5669,7 @@
           {
             "kind": "Function",
             "name": "connectDevice",
-            "printedName": "connectDevice(productKey:deviceName:timeout:callback:)",
+            "printedName": "connectDevice(productKey:deviceName:timeout:callback:encryptionMode:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5740,11 +5741,32 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MXFogBleEncryptionMode",
+                "printedName": "MXFogProvision.MXFogBleEncryptionMode",
+                "hasDefaultArg": true,
+                "usr": "c:@M@MXFogProvision@E@MXFogBleEncryptionMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MXFogProvision.MXFogProvisionDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXFogProvisionDelegate",
+                    "printedName": "any MXFogProvision.MXFogProvisionDelegate",
+                    "usr": "c:@M@MXFogProvision@objc(pl)MXFogProvisionDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)connectDeviceWithProductKey:deviceName:timeout:callback:",
-            "mangledName": "$s14MXFogProvision0A14BleGattManagerC13connectDevice10productKey10deviceName7timeout8callbackySS_SSSdySb_s5Error_pSgtcSgtF",
+            "usr": "c:@CM@MXFogProvision@objc(cs)MXFogBleGattManager(im)connectDeviceWithProductKey:deviceName:timeout:callback:encryptionMode:delegate:",
+            "mangledName": "$s14MXFogProvision0A14BleGattManagerC13connectDevice10productKey10deviceName7timeout8callback14encryptionMode8delegateySS_SSSdySb_s5Error_pSgtcSgAA0ac10EncryptionO0OAA0aB8Delegate_pSgtF",
             "moduleName": "MXFogProvision",
             "declAttributes": [
               "Dynamic",
@@ -8502,28 +8524,28 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 979,
+      "offset": 1036,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1471,
+      "offset": 1685,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2094,
+      "offset": 2336,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXFrameworks\/MXFogProvision\/MXBluetooth\/MXFogBleGattManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6130,
+      "offset": 7453,
       "length": 1,
       "value": "5"
     },
