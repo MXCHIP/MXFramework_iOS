@@ -239,6 +239,9 @@ public func mxFogGCMNonce(from random: Swift.String?) -> Foundation.Data
 #if compiler(>=5.3) && $NonescapableTypes
 public func mxFogPerformGCMEncrypt(data: Foundation.Data, key: Foundation.Data, nonceData: Foundation.Data) -> Foundation.Data?
 #endif
+#if compiler(>=5.3) && $NonescapableTypes
+public func mxFogPerformGCMDecrypt(data: Foundation.Data, key: Foundation.Data, nonceData: Foundation.Data) -> Foundation.Data?
+#endif
 public let AWS_ECHO_SERVER_PORT: Swift.UInt16
 public let AWS_ECHO_CLIENT_PORT: Swift.UInt16
 public struct EasyLinkConfigKeys {

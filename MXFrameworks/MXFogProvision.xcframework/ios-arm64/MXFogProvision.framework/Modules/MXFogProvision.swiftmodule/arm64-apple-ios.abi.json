@@ -6852,6 +6852,54 @@
         "funcSelfKind": "NonMutating"
       },
       {
+        "kind": "Function",
+        "name": "mxFogPerformGCMDecrypt",
+        "printedName": "mxFogPerformGCMDecrypt(data:key:nonceData:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Foundation.Data?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Data",
+            "printedName": "Foundation.Data",
+            "usr": "s:10Foundation4DataV"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14MXFogProvision22mxFogPerformGCMDecrypt4data3key9nonceData10Foundation0J0VSgAH_A2HtF",
+        "mangledName": "$s14MXFogProvision22mxFogPerformGCMDecrypt4data3key9nonceData10Foundation0J0VSgAH_A2HtF",
+        "moduleName": "MXFogProvision",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
