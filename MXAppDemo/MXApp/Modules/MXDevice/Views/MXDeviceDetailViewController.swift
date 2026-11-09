@@ -12,6 +12,8 @@ public class MXDeviceDetailViewController: MXBaseViewController {
     
     var iotId : String!
     var info : MXDeviceInfo?
+    var otaInfo: MXOTAInfo?
+    var mcu_otaInfo: MXOTAInfo?
     var headerView: MXDeviceDetailHeaderView!
     
     var dataSources = [MXCellModel]()
@@ -42,6 +44,9 @@ public class MXDeviceDetailViewController: MXBaseViewController {
         self.dataSources.append(MXCellModel(title: MXAppConfig.mxLocalized(key:"mx_product_key")))
         self.dataSources.append(MXCellModel(title: MXAppConfig.mxLocalized(key:"mx_mac")))
         self.dataSources.append(MXCellModel(title: MXAppConfig.mxLocalized(key:"mx_firmware_version")))
+        if self.mcu_otaInfo != nil || (self.info?.mcu_version?.count ?? 0) > 0 {
+            self.dataSources.append(MXCellModel(title: MXAppConfig.mxLocalized(key:"mx_mcu_version")))
+        }
     }
     
     public override func viewDidLoad() {
@@ -115,9 +120,9 @@ public class MXDeviceDetailViewController: MXBaseViewController {
         }
         
         group.notify(queue: DispatchQueue.main) {
-            self.updateDataSources()
-            self.headerView.refreshView(info: self.info!)
-            self.tableView.reloadData()
+            guard let info = self.info else { return }
+            self.headerView.refreshView(info: info)
+            self.loadDeviceOTAInfo()
         }
     }
 }
@@ -183,9 +188,50 @@ extension MXDeviceDetailViewController: UITableViewDelegate, UITableViewDataSour
                 }
                 break
             case MXAppConfig.mxLocalized(key:"mx_firmware_version"):
-                cell?.textLabel?.text = MXAppConfig.mxLocalized(key:"mx_firmware_version")
-                cell?.detailTextLabel?.text = self.info?.firmware_version
-                cell?.accessoryType = .none
+                if (self.info?.isShare ?? false) || !MXHomeManager.shard.operationAuthorityCheck() {
+                    cell?.accessoryType = .none
+                    cell?.detailTextLabel?.text = (self.info?.firmware_version ??  "")
+                } else {
+                    if (self.otaInfo?.has_newVersion ?? false) {
+                        let str = NSMutableAttributedString()
+                        var version = self.info?.firmware_version ?? ""
+                        if version.count == 0, let new_version = self.otaInfo?.version {
+                            version = new_version
+                        }
+                        let str1 = NSAttributedString(string: version, attributes: [.font: UIFont.mxSystemFont(ofSize: 16),.foregroundColor:MXAppConfig.MXColor.secondaryText])
+                        str.append(str1)
+                        let str2 = NSAttributedString(string: "\u{e72e}", attributes: [.font: UIFont.mxIconFont(ofSize: 16),.foregroundColor:UIColor.red])
+                        str.append(str2)
+                        cell?.detailTextLabel?.attributedText = str
+                        cell?.accessoryType = .disclosureIndicator
+                    } else {
+                        cell?.detailTextLabel?.text = self.info?.firmware_version
+                        cell?.accessoryType = .none
+                    }
+                }
+                break
+            case MXAppConfig.mxLocalized(key:"mx_mcu_version"):
+                if (self.info?.isShare ?? false) || !MXHomeManager.shard.operationAuthorityCheck() {
+                    cell?.accessoryType = .none
+                    cell?.detailTextLabel?.text = (self.info?.mcu_version ??  "")
+                } else {
+                    if (self.mcu_otaInfo?.has_newVersion ?? false) {
+                        let str = NSMutableAttributedString()
+                        var version = self.info?.mcu_version ?? ""
+                        if version.count == 0, let new_version = self.mcu_otaInfo?.version {
+                            version = new_version
+                        }
+                        let str1 = NSAttributedString(string: version, attributes: [.font: UIFont.mxSystemFont(ofSize: 16),.foregroundColor:MXAppConfig.MXColor.secondaryText])
+                        str.append(str1)
+                        let str2 = NSAttributedString(string: "\u{e72e}", attributes: [.font: UIFont.mxIconFont(ofSize: 16),.foregroundColor:UIColor.red])
+                        str.append(str2)
+                        cell?.detailTextLabel?.attributedText = str
+                        cell?.accessoryType = .disclosureIndicator
+                    } else {
+                        cell?.detailTextLabel?.text = self.info?.mcu_version
+                        cell?.accessoryType = .none
+                    }
+                }
                 break
             default:
                 break
@@ -197,7 +243,17 @@ extension MXDeviceDetailViewController: UITableViewDelegate, UITableViewDataSour
         return 60
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if self.dataSources.count > indexPath.row {
+            let model = self.dataSources[indexPath.row]
+            switch model.title {
+            case MXAppConfig.mxLocalized(key:"mx_firmware_version"):
+                self.gotoOTAPage(info: self.otaInfo)
+            case MXAppConfig.mxLocalized(key:"mx_mcu_version"):
+                self.gotoOTAPage(info: self.mcu_otaInfo)
+            default:
+                break
+            }
+        }
     }
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -225,6 +281,66 @@ extension MXDeviceDetailViewController: UITableViewDelegate, UITableViewDataSour
 }
 
 extension MXDeviceDetailViewController {
+    
+    func loadDeviceOTAInfo() {
+        let group = DispatchGroup()
+        group.enter()
+        MXAPI.OTA.checkDevice(iotid: self.iotId) { data, message, code in
+            if code == 0, let dict = data as? [String: Any], let info = MXOTAInfo.mx_Decode(dict) {
+                self.otaInfo = info
+                if let current_version = info.current_version {
+                    self.info?.firmware_version = current_version
+                }
+            } else {
+                self.otaInfo = nil
+            }
+            group.leave()
+        }
+        
+        if let deviceType = self.info?.productInfo?.node_type_v2,
+           deviceType != "gateway-sub" {
+            group.enter()
+            MXAPI.OTA.checkDevice(iotid: self.iotId, module: "mcu") { data, message, code in
+                if code == 0, let dict = data as? [String: Any], let info = MXOTAInfo.mx_Decode(dict) {
+                    self.mcu_otaInfo = info
+                    if let current_version = info.current_version {
+                        self.info?.mcu_version = current_version
+                    }
+                } else {
+                    self.mcu_otaInfo = nil
+                }
+                group.leave()
+            }
+        }
+        
+        group.notify(queue: DispatchQueue.main) {
+            self.updateDataSources()
+            if let info = self.info {
+                self.headerView.refreshView(info: info)
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    func gotoOTAPage(info: MXOTAInfo?) {
+        if (self.info?.isShare ?? false) {
+            return
+        }
+        if !MXHomeManager.shard.operationAuthorityCheck() {
+            return
+        }
+        guard let info = info, info.has_newVersion, info.version != nil else { return }
+        var params = [String: Any]()
+        params["iotId"] = self.iotId
+        params["device"] = self.info
+        params["info"] = info
+        
+        if info.ota_type == 1 {
+            MXURLRouter.open(url: "https://com.mxchip.bta/page/device/WiFiOTA", params: params)
+        } else if info.ota_type == 2 {
+            MXURLRouter.open(url: "https://com.mxchip.bta/page/device/OTA", params: params)
+        }
+    }
     
     //复制ID
     func copyDeviceName() {

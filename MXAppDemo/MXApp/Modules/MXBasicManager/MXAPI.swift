@@ -96,6 +96,13 @@ public class MXAPI: NSObject {
             MXAPI.toast.request(path: path, method: .post, parameters: params, response: response)
         }
         
+        public static func updateVersion(iotId: String, version: String, response: @escaping (_ data: Any?, _ message: String, _ code: Int) -> Void) {
+            var params = [String: Any]()
+            params["version"] = version
+            params["iotid"] = iotId
+            MXAPI.request(path: "app/v1/device/version/update", method: .put, parameters: params, response: response)
+        }
+        
     }
     
     public struct product {
@@ -126,6 +133,28 @@ public class MXAPI: NSObject {
             var params = [String: Any]()
             params["product_key"] = productKey
             MXAPI.toast.request(path: path, method: .get, parameters: params, response: response)
+        }
+    }
+    
+    public struct OTA {
+        
+        public static func startWiFiDevice(with product_key: String, iotid: String, task_id: Int, response: @escaping (_ data: Any?, _ message: String, _ code: Int) -> Void) -> Void {
+            let path = "app/v3/ota/upgrade/confirmation"
+            let params: [String: Any] = ["product_key": product_key, "iotid": iotid, "task_id": task_id]
+            MXAPI.request(path: path, method: .put, parameters: params, response: response)
+        }
+        
+        public static func cancelWiFiDevice(with product_key: String, iotid: String, task_id: Int, response: @escaping (_ data: Any?, _ message: String, _ code: Int) -> Void) -> Void {
+            let path = "app/v3/ota/upgrade/cancel"
+            let params: [String: Any] = ["product_key": product_key, "iotid": iotid, "task_id": task_id]
+            MXAPI.request(path: path, method: .put, parameters: params, response: response)
+        }
+        
+        public static func checkDevice(iotid: String, module: String? = nil, response: @escaping (_ data: Any?, _ message: String, _ code: Int) -> Void) -> Void {
+            let path = "app/v3/ota/newVersion"
+            var params: [String: Any] = ["iotid": iotid]
+            params["module"] = module
+            MXAPI.request(path: path, method: .get, parameters: params, response: response)
         }
     }
     

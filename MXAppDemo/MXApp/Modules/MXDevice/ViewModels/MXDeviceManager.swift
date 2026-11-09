@@ -92,6 +92,16 @@ public class MXDeviceManager: NSObject {
             }
         }
     }
+    //更新设备固件版本号
+    public func updateDeviceVersion(iotId: String, version: String?, handler:@escaping() -> Void) {
+        guard let version = version, version.count > 0 else {
+            handler()
+            return
+        }
+        MXAPI.device.updateVersion(iotId: iotId, version: version) { (data: Any, message: String, code: Int) in
+            handler()
+        }
+    }
     //给设备发送物模型消息（云端发送）
     public func sendDeviceMessage(iotId: String, curSet: [String : Any], handler:@escaping (_ isSuccess: Bool) -> Void) {
         MXAPI.device.setProperties(iotId: iotId, items: curSet) { (data: Any, message: String, code: Int ) in

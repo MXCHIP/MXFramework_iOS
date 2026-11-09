@@ -1,0 +1,6 @@
+framework module RTKBBproSDK {
+  umbrella header "RTKBBproSDK.h"
+
+  export *
+  module * { export * }
+}

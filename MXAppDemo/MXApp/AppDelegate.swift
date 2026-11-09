@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MXAPIManagerDelegate {
         self.window?.makeKeyAndVisible()
         
         MXRouterConfig.registerRouter()
+        self.createFirmwaresPath()
         
         NotificationCenter.default.addObserver(self, selector: #selector(SDKInitialization), name: NSNotification.Name(rawValue: "MXNotificationInitSDK"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(startSteup), name: NSNotification.Name(rawValue: "MXNotificationHostSteup"), object: nil)
@@ -80,6 +81,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MXAPIManagerDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         
+    }
+    
+    func createFirmwaresPath() {
+        let pathes = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
+        let path = pathes.first!
+        let s = "\(path)/firmwares"
+        try? FileManager.default.createDirectory(atPath: s, withIntermediateDirectories: true)
     }
     
     // 登录成功

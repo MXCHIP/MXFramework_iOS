@@ -29,6 +29,10 @@
 		7CFD260226B7F3A000C39170 /* MXAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD260126B7F3A000C39170 /* MXAlertView.swift */; };
 		7CFD260626B9549A00C39170 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD260526B9549A00C39170 /* UITapGestureRecognizer+Extension.swift */; };
 		7CFD260926B954B700C39170 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD260826B954B700C39170 /* String+Extension.swift */; };
+		A11F0A01202611090001AB /* MXOTAInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F0A02202611090001AB /* MXOTAInfo.swift */; };
+		A11F0B03202611090001AB /* MXMeshOTAHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F0B02202611090001AB /* MXMeshOTAHandle.swift */; };
+		A11F0C03202611090001AB /* MXWiFiOTAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F0C02202611090001AB /* MXWiFiOTAViewController.swift */; };
+		A11F0C05202611090001AB /* MXDeviceOTAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F0C04202611090001AB /* MXDeviceOTAViewController.swift */; };
 		A6D10A3280E3EE9E58BF01B7 /* Pods_MXApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D20BCCDCD352F04F67A039 /* Pods_MXApp.framework */; };
 		DC0A45C12A72678400187B8E /* MXDeviceManager+Provisioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A45C02A72678400187B8E /* MXDeviceManager+Provisioning.swift */; };
 		DC10A74127C873E700A8F833 /* MXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC10A74027C873E700A8F833 /* MXNavigationController.swift */; };
@@ -181,6 +185,10 @@
 		7CFD260826B954B700C39170 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		801A30872CE61A2A9567A73F /* Pods_MeshSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D20BCCDCD352F04F67A039 /* Pods_MXApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11F0A02202611090001AB /* MXOTAInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXOTAInfo.swift; sourceTree = "<group>"; };
+		A11F0B02202611090001AB /* MXMeshOTAHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXMeshOTAHandle.swift; sourceTree = "<group>"; };
+		A11F0C02202611090001AB /* MXWiFiOTAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXWiFiOTAViewController.swift; sourceTree = "<group>"; };
+		A11F0C04202611090001AB /* MXDeviceOTAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXDeviceOTAViewController.swift; sourceTree = "<group>"; };
 		DC0A45C02A72678400187B8E /* MXDeviceManager+Provisioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MXDeviceManager+Provisioning.swift"; sourceTree = "<group>"; };
 		DC10A74027C873E700A8F833 /* MXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXNavigationController.swift; sourceTree = "<group>"; };
 		DC17482E26D4A3FA00CDB7D9 /* MXSearchDeviceHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSearchDeviceHeader.swift; sourceTree = "<group>"; };
@@ -336,6 +344,23 @@
 				5257D41AF1ACB628D0BB4E5C /* Pods_MXHomeClip.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A11F0B01202611090001AB /* MXMeshOTA */ = {
+			isa = PBXGroup;
+			children = (
+				A11F0B02202611090001AB /* MXMeshOTAHandle.swift */,
+			);
+			path = MXMeshOTA;
+			sourceTree = "<group>";
+		};
+		A11F0C01202611090001AB /* MXDeviceOTA */ = {
+			isa = PBXGroup;
+			children = (
+				A11F0C02202611090001AB /* MXWiFiOTAViewController.swift */,
+				A11F0C04202611090001AB /* MXDeviceOTAViewController.swift */,
+			);
+			path = MXDeviceOTA;
 			sourceTree = "<group>";
 		};
 		CA9B162CC724EEA70563DB64 /* Pods */ = {
@@ -508,6 +533,8 @@
 				DCEACF812D27B6F7007EEF0C /* MXProduct */,
 				DCD4017D26AF962A0026E83D /* MXRoom */,
 				FB131FCA2B05B622009C5A4B /* MXDevice */,
+				A11F0B01202611090001AB /* MXMeshOTA */,
+				A11F0C01202611090001AB /* MXDeviceOTA */,
 				DCE562D92683573C0035CA40 /* MXAddDevices */,
 				DCE562CF268314E60035CA40 /* MXDeviceH5Plan */,
 				DCA7D6FD26565F970038D2B7 /* MXLogin */,
@@ -710,6 +737,7 @@
 			isa = PBXGroup;
 			children = (
 				DC1C25702A5FF7B2005ECA2F /* MXDeviceInfo.swift */,
+				A11F0A02202611090001AB /* MXOTAInfo.swift */,
 				DCF84CA12DA7B51B00594CB5 /* MXPropertyInfo.swift */,
 				DCF84C9F2DA7B4C000594CB5 /* MXMeshInfo.swift */,
 				DCCD2B002D8D08EC003E211A /* MXIpInfo.swift */,
@@ -934,9 +962,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MXApp/Pods-MXApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MXApp/Pods-MXApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1076,6 +1108,10 @@
 				FB02EC7F2AEA33410098BBC4 /* MXDeviceScanManager.swift in Sources */,
 				FB1320492B05C7E7009C5A4B /* MXPasswordInputModel.swift in Sources */,
 				DC1C25782A5FF7B2005ECA2F /* MXDeviceInfo.swift in Sources */,
+				A11F0A01202611090001AB /* MXOTAInfo.swift in Sources */,
+				A11F0B03202611090001AB /* MXMeshOTAHandle.swift in Sources */,
+				A11F0C03202611090001AB /* MXWiFiOTAViewController.swift in Sources */,
+				A11F0C05202611090001AB /* MXDeviceOTAViewController.swift in Sources */,
 				DC35BDE226E99F29001E5BF3 /* MXDeviceDetailViewController.swift in Sources */,
 				7CFA66C327004E9400972F7B /* MXAPI.swift in Sources */,
 			);
@@ -1252,7 +1288,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MXApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1299,7 +1335,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MXApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

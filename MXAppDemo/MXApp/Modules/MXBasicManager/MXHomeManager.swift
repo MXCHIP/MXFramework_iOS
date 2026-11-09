@@ -130,6 +130,12 @@ extension MXHomeManager  {
                       let _ = dict["value"] as? [String : Any] {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "kDeviceEventFromRemote"), object: dict)
             }
+        } else if let biz_code = dict["biz_code"] as? String {  //fog相关的消息
+            if biz_code == "ota_progress" {
+                NotificationCenter.default.post(name: NSNotification.Name("WiFiOTAOngoing"), object: nil, userInfo: dict)
+            } else if biz_code == "ota_version" {
+                NotificationCenter.default.post(name: NSNotification.Name("WiFiOTAFinish"), object: nil, userInfo: dict)
+            }
         }
     }
     

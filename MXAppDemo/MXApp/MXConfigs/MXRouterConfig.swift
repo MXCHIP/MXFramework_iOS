@@ -21,6 +21,8 @@ class MXRouterConfig: NSObject {
         MXURLRouterService.register(key: "com.mxchip.bta/page/device/autoSearch", module: MXAutoSearchViewController.self)
         MXURLRouterService.register(key: "com.mxchip.bta/page/device/deviceInit", module: MXAddDeviceInitViewController.self)
         MXURLRouterService.register(key: "com.mxchip.bta/page/device/detail", module: MXDeviceDetailViewController.self)
+        MXURLRouterService.register(key: "com.mxchip.bta/page/device/OTA", module: MXDeviceOTAViewController.self)
+        MXURLRouterService.register(key: "com.mxchip.bta/page/device/WiFiOTA", module: MXWiFiOTAViewController.self)
         MXURLRouterService.register(key: "com.mxchip.bta/page/device/addHelp", module: MXAddDeviceHelpPage.self)
         MXURLRouterService.register(key: "com.mxchip.bta/page/device/provision/easylink", module: MXEasyLinkProvisionPage.self)
         
